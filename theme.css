@@ -8,7 +8,7 @@ You can find more information about a particular variable on the Obsidian Docs w
 body {
 	/* ──── Foundations ─────────────────────────────────────────────────────── */
 	/* Borders */
-	/* --border-width: 1px; */
+	--border-width: 1px;
 	
 	/* Base Colours */
 	/* --color-base-00: #1e1e1e; */
@@ -987,7 +987,7 @@ Remove ".published-container" if you are not planning on using theme in Obsidian
 */
 .published-container {
 	/* Site Components */
-	/* --component-title-color: '??'; */
+	--component-title-color: '??';
 	/* --component-title-font: '??'; */
 	/* --component-title-size: '??'; */
 	/* --component-title-style: '??'; */
