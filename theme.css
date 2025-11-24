@@ -1,14 +1,386 @@
+:root {
+	/* Icons */
+	/* ──── Icons ──────────────────────────────────────────────────────────── */
+	--godot-folder-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill='%23e0e0e0' d='M2 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-4a1 1 0 0 1-1-1V3a1 1 0 0 0-1-1z'/%3E%3C/svg%3E%0A");
+	--godot-folder-browse-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='16' height='16'%3E%3Cpath fill='%23e0e0e0' d='M2 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3.738a2.5 2.5 0 0 1-.238-1.074 2.49 2.49 0 0 1 2.5-2.5c.565 0 1.083.187 1.5.5.417-.313.935-.5 1.5-.5s1.083.187 1.5.5a2.5 2.5 0 0 1 2.5-.295V6a1 1 0 0 0-1-1h-4a1 1 0 0 1-1-1V3a1 1 0 0 0-1-1Zm5.408 13.355.074.018q-.038-.008-.074-.018m.35.06'/%3E%3Cpath fill='%23e0e0e0' d='M9 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0'/%3E%3C/svg%3E%0A");
+	--godot-file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill='%23e0e0e0' d='m2 1v14h12v-9h-5v-5zm8 0v4h4z'/%3E%3C/svg%3E%0A");
+	--godot-code-fold-down-arrow-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m3 5 3 3 3-3'/%3E%3C/svg%3E%0A");
+	--godot-gui-slider-grabber-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle cx='8' cy='8' r='3' fill='%23fff' fill-opacity='.9'/%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23e0e0e0' stroke-opacity='.29' stroke-width='2'/%3E%3C/svg%3E");
+	--godot-gui-slider-grabber-hl-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle cx='8' cy='8' r='3' fill='%23fff' fill-opacity='.9'/%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23e0e0e0' stroke-width='2'/%3E%3C/svg%3E");
+	/* ──────────────────────────────────────────────────────────────────────── */
+
+	/* ──── Fonts ───────────────────────────────────────────────────────────── */
+	/* Could not get fonts to embed into theme file. Fonts must exist on the system to work. */
+	--godot-font-main: "??";
+	--godot-font-bold: "??";
+	--godot-font-code: "JetBrains Mono";
+	/* ──────────────────────────────────────────────────────────────────────── */
+
+	/* Base colour that darker and lighter colours are derived from. */
+	--godot-base-colour: #363d4a;
+}
+
+
 /*
 CSS variables list for Obsidian.
 Most variables have their default values assigned, so nothing will change if you uncomment out a line.
 You can find more information about a particular variable on the Obsidian Docs website:
 (https://docs.obsidian.md/Reference/CSS+variables/CSS+variables)
 */
-
 body {
+	/* Godot Variables */
+	--godot-radius-s: 3px;
+
+	/* ──── Colours ──────────────────────────────────────────────────────────── */
+	/* Main */
+	--godot-background-primary: #363d4a;
+	--godot-background-primary-alt: #21262e;
+	--godot-background-secondary: #21262e;
+	--godot-background-secondary-alt: #252b34;
+	
+	/* Font */
+	--godot-font-colour: #cdcfd2;
+	--godot-font-colour-rgb: 205, 207, 210;
+	--godot-font-colour-alpha: 1.0;
+	--godot-font-colour-disabled: #ffffff;
+	--godot-font-colour-disabled-rgb: 255, 255, 255;
+	--godot-font-colour-disabled-alpha: 0.349;
+	--godot-font-colour-focus: #e6e7e8;
+	--godot-font-colour-focus-rgb: 230, 231, 232;
+	--godot-font-colour-focus-alpha: 1.0;
+	--godot-font-colour-hover: #e6e7e8;
+	--godot-font-colour-hover-rgb: 255, 255, 255;
+	--godot-font-colour-hover-alpha: 1.0;
+	--godot-font-colour-hover-pressed: #8fc6f5;
+	--godot-font-colour-hover-pressed-rgb: 143, 198, 245;
+	--godot-font-colour-hover-pressed-alpha: 1.0;
+	--godot-font-colour-placeholder: #ffffff80;
+	--godot-font-colour-placeholder-rgb: 255, 255, 255;
+	--godot-font-colour-placeholder-alpha: 0.502;
+	--godot-font-colour-pressed: #70bafa; /* Used by accent. Should use accent colour in Obsidian settings. */
+	--godot-font-colour-pressed-rgb: 112, 186, 250;
+	--godot-font-colour-pressed-alpha: 1.0;
+	--godot-font-colour-readonly: #ffffff;
+	--godot-font-colour-readonly-rgb: 255, 255, 255;
+	--godot-font-colour-readonly-alpha: 0.651;
+
+	/* Icons */
+	--godot-icon-colour-disabled: #ffffff;
+	--godot-icon-colour-disabled-rgb: 255, 255, 255;
+	--godot-icon-colour-disabled-alpha: 0.4;
+	--godot-icon-colour-focus: #ffffff; /* Obsidian doesn't support HDR values (greater than 1.0 in r, g, or b). Limit to max value. */
+	--godot-icon-colour-focus-rgb: 255, 255, 255;
+	--godot-icon-colour-focus-alpha: 1.0;
+	--godot-icon-colour-hover: #ffffff;
+	--godot-icon-colour-hover-rgb: 255, 255, 255;
+	--godot-icon-colour-hover-alpha: 1.0;
+	--godot-icon-colour-normal: #ffffff;
+	--godot-icon-colour-normal-rgb: 255, 255, 255;
+	--godot-icon-colour-normal-alpha: 1.0;
+	--godot-icon-colour-pressed: #81d7ff;
+	--godot-icon-colour-pressed-rgb: 129, 215, 255;
+	--godot-icon-colour-pressed-alpha: 1.0;
+	--godot-icon-colour-saturation: #ffffff;
+	--godot-icon-colour-saturation-rgb: 255, 255, 255;
+	--godot-icon-colour-saturation-alpha: 1.0;
+	
+	/* Check Box */
+	--godot-checkbox-font-colour: var(--godot-font-colour);
+	--godot-checkbox-font-colour-disabled: var(--godot-font-colour-disabled);
+	--godot-checkbox-font-colour-focus: var(--godot-font-colour-focus);
+	--godot-checkbox-font-colour-hover: var(--godot-font-colour-hover);
+	--godot-checkbox-font-colour-hover-pressed: var(--godot-font-colour-hover-pressed);
+	--godot-checkbox-font-colour-pressed: var(--godot-font-colour-pressed);
+	--godot-checkbox-icon-colour-disabled: var(--godot-icon-colour-disabled);
+	--godot-checkbox-icon-colour-focus: var(--godot-icon-colour-focus);
+	--godot-checkbox-icon-colour-hover: var(--godot-icon-colour-hover);
+	--godot-checkbox-icon-colour-normal: var(--godot-icon-colour-normal);
+	--godot-checkbox-icon-colour-pressed: var(--godot-icon-colour-pressed);
+
+	/* Tree */
+	--godot-tree-children-hl-line-colour: rgba(var(--godot-font-colour-disabled-rgb), var(--godot-font-colour-disabled-alpha));
+	--godot-tree-font-colour: var(--godot-font-colour);
+	--godot-tree-font-colour-disabled: var(--godot-font-colour-disabled);
+	--godot-tree-font-colour-hovered: rgba(var(--godot-font-colour-hover-rgb), var(--godot-font-colour-hover-alpha));
+	--godot-tree-font-colour-hovered-dim: var(--godot-font-colour);
+	--godot-tree-font-colour-hovered-selected: rgba(var(--godot-font-colour-hover-pressed-rgb), var(--godot-font-colour-hover-pressed-alpha));
+	--godot-tree-font-colour-selected: rgba(var(--godot-font-colour-focus-rgb), var(--godot-font-colour-focus-alpha));
+	--godot-tree-guide-colour: rgba(255 255 255 / 0.05);
+	--godot-tree-parent-hl-line-colour: rgba(255 255 255 / 0.549);
+	--godot-tree-relationship-line-colour: rgba(255 255 255 / 0.1);
+	
+	/* Popup (Modal) */
+	--godot-popup-font-colour: rgba(var(--godot-font-colour), var(--godot-font-colour-alpha));
+	--godot-popup-font-colour-disabled: rgba(var(--godot-font-colour-disabled-rgb), var(--godot-font-colour-disabled-alpha));
+	--godot-popup-font-colour-hover: rgba(var(--godot-font-colour-hover), var(--godot-font-colour-hover-alpha));
+	--godot-popup-font-colour-separator: rgba(var(--godot-font-colour-disabled-rgb), var(--godot-font-colour-disabled-alpha));
+
+	/* Slider */
+	--godot-slider-colour: #15181e;
+	--godot-slider-rgb: 21, 24, 30;
+	--godot-slider-alpha: 1.0;
+	--godot-slider-grabber-colour: #ffffff;
+	--godot-slider-grabber-rgb: 255, 255, 255;
+	--godot-slider-grabber-alpha: 1.0;
+	--godot-slider-grabber-area-colour: #727780;
+	--godot-slider-grabber-area-rgb: 113, 118, 127;
+	--godot-slider-grabber-area-alpha: 1.0;
+	--godot-slider-grabber-highlight-colour: #727780;
+	--godot-slider-grabber-highlight-rgb: 113, 118, 127;
+	--godot-slider-grabber-highlight-alpha: 1.0;
+
+	/* ──── Tab ─────────────────────────────────────────────────────────────── */
+	/* Colours */
+	--godot-tab-drop-mark-colour: var(--color-accent);
+	--godot-tab-drop-mark-hsl: var(--accent-h), var(--accent-s), var(--accent-l); 
+	--godot-tab-font-hovered-colour: rgba(var(--godot-font-colour), var(--godot-font-colour-alpha));
+	--godot-tab-font-outline-colour: #00000000;
+	--godot-tab-font-selected-colour: var(--godot-font-colour);
+	--godot-tab-font-unselected-colour: #ffffff59;
+	/* Constants */
+	--godot-tab-h-seperation: 8px;
+	--godot-tab-icon-max-width: 0;
+	--godot-tab-icon-separation: 4px;
+	--godot-tab-outline-size: 0;
+	--godot-tab-side-margin: 0;
+	--godot-tab-separation: 0;
+	/* Font Sizes */
+	--godot-tab-font-size: var(--font-text-size);
+	/* Fonts */
+	--godot-tab-font: var(--font-text-theme), var(--font-text);
+	/* Icons */
+
+	/* Styles */
+	/* Tab Panel */
+	--godot-tab-panel-bg-colour: var(--godot-background-primary);
+	--godot-tab-panel-skew-x: 0;
+	--godot-tab-panel-skew-y: 0;
+	--godot-tab-panel-skew: skew(var(--godot-tab-panel-skew-x) var(--godot-tab-panel-skew-y));
+	--godot-tab-panel-border-width: 0;
+	--godot-tab-panel-border-colour: #15181eff;
+	--godot-tab-panel-border-radius: 0 0 6px 6px;
+	--godot-tab-panel-content-margin: 12px 8px 8px 8px;
+	--godot-tab-panel-shadow-colour: #00000099;
+	--godot-tab-panel-shadow-size: 0;
+	--godot-tab-panel-shadow-offset-x: 0;
+	--godot-tab-panel-shadow-offset-y: 0;
+	--godot-tab-panel-shadow: var(--godot-tab-panel-shadow-offset-x) var(--godot-tab-panel-shadow-offset-y) 0 var(--godot-tab-panel-shadow-size) var(--godot-tab-panel-shadow-colour);
+	/* Disabled */
+	--godot-tab-disabled-bg-colour: #303743ff;
+	--godot-tab-disabled-skew-x: 0;
+	--godot-tab-disabled-skew-y: 0;
+	--godot-tab-disabled-skew: skew(var(--godot-tab-disabled-skew-x), var(--godot-tab-disabled-skew-y));
+	--godot-tab-disabled-border-width: 0;
+	--godot-tab-disabled-border-colour: #303743ff;
+	--godot-tab-disabled-corner-radius: 6px 6px 0 0;
+	--godot-tab-disabled-content-margin: 10px 22px 10px 22px;
+	--godot-tab-disabled-shadow-colour: #00000099;
+	--godot-tab-disabled-shadow-size: 0;
+	--godot-tab-disabled-shadow-offset-x: 0;
+	--godot-tab-disabled-shadow-offset-y: 0;
+	--godot-tab-disabled-shadow: var(--godot-tab-disabled-shadow-offset-x) var(--godot-tab-disabled-shadow-offset-y) 0 var(--godot-tab-disabled-shadow-size) var(--godot-tab-disabled-shadow-colour);
+	/* Tab Focus */
+	--godot-tab-focus-bg-colour: #252b3400;
+	--godot-tab-focus-skew-x: 0;
+	--godot-tab-focus-skew-y: 0;
+	--godot-tab-focus-skew: skew(var(--godot-tab-focus-skew-x), var(--godot-tab-focus-skew-y));
+	--godot-tab-focus-border-width: 4px;
+	--godot-tab-focus-border-colour: var(--color-accent);
+	--godot-tab-focus-corner-radius: 6px;
+	--godot-tab-focus-expand-margin: 0;
+	--godot-tab-focus-shadow-colour: #00000099;
+	--godot-tab-focus-shadow-size: 0;
+	--godot-tab-focus-shadow-offset-x: 0;
+	--godot-tab-focus-shadow-offset-y: 0;
+	--godot-tab-focus-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-colour);
+	--godot-tab-focus-content-margins: 10px 12px 10px 12px;
+	/* Tab Hovered */
+	--godot-tab-hovered-bg-colour: #2c323dff;
+	--godot-tab-hovered-skew-x: 0;
+	--godot-tab-hovered-skew-y: 0;
+	--godot-tab-hovered-skew: skew(var(--godot-tab-hovered-skew-x), var(--godot-tab-hovered-skew-y));
+	--godot-tab-hovered-border-width: 0;
+	--godot-tab-hovered-border-colour: #1d2229ff;
+	--godot-tab-hovered-corner-radius: 0;
+	--godot-tab-hovered-expand-margin: 0;
+	--godot-tab-hovered-shadow-colour: #00000099;
+	--godot-tab-hovered-shadow-size: 0;
+	--godot-tab-hovered-shadow-offset-x: 0;
+	--godot-tab-hovered-shadow-offset-y: 0;
+	--godot-tab-hovered-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-colour);
+	--godot-tab-hovered-content-margins: 10px 22px 10px 22px;
+	/* Tab Selected */
+	--godot-tab-selected-bg-colour: var(--godot-background-primary);
+	--godot-tab-selected-skew-x: 0;
+	--godot-tab-selected-skew-y: 0;
+	--godot-tab-selected-skew: skew(var(--godot-tab-selected-skew-x), var(--godot-tab-selected-skew-y));
+	--godot-tab-selected-border-width: 4px 0 0 0;
+	--godot-tab-selected-border-colour: var(--color-accent);
+	--godot-tab-selected-corner-radius: 0;
+	--godot-tab-selected-expand-margin: 0;
+	--godot-tab-selected-shadow-colour: #00000099;
+	--godot-tab-selected-shadow-size: 0;
+	--godot-tab-selected-shadow-offset-x: 0;
+	--godot-tab-selected-shadow-offset-y: 0;
+	--godot-tab-selected-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-colour);
+	--godot-tab-selected-content-margins: 10px 22px 10px 22px;
+	/* Tab Unselected */
+	--godot-tab-unselected-bg-colour: var(--godot-background-secondary-alt);
+	--godot-tab-unselected-skew-x: 0;
+	--godot-tab-unselected-skew-y: 0;
+	--godot-tab-unselected-skew: skew(var(--godot-tab-unselected-skew-x), var(--godot-tab-unselected-skew-y));
+	--godot-tab-unselected-border-width: 0;
+	--godot-tab-unselected-border-colour: transparent;
+	--godot-tab-unselected-corner-radius: 0;
+	--godot-tab-unselected-expand-margin: 0;
+	--godot-tab-unselected-shadow-colour: #00000099;
+	--godot-tab-unselected-shadow-size: 0;
+	--godot-tab-unselected-shadow-offset-x: 0;
+	--godot-tab-unselected-shadow-offset-y: 0;
+	--godot-tab-unselected-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-colour);
+	--godot-tab-unselected-content-margins: 10px 22px 10px 22px;
+	/* Tabbar Background */
+	--godot-tab-tabbar-background-bg-colour: var(--godot-background-secondary-alt);
+	--godot-tab-tabbar-background-skew-x: 0;
+	--godot-tab-tabbar-background-skew-y: 0;
+	--godot-tab-tabbar-background-skew: skew(var(--godot-tab-tabbar-background-skew-x), var(--godot-tab-tabbar-background-skew-y));
+	--godot-tab-tabbar-background-border-width: 0;
+	--godot-tab-tabbar-background-border-colour: transparent;
+	--godot-tab-tabbar-background-corner-radius: 12 12 0 0;
+	--godot-tab-tabbar-background-expand-margin: 0;
+	--godot-tab-tabbar-background-shadow-colour: #00000099;
+	--godot-tab-tabbar-background-shadow-size: 0;
+	--godot-tab-tabbar-background-shadow-offset-x: 0;
+	--godot-tab-tabbar-background-shadow-offset-y: 0;
+	--godot-tab-tabbar-background-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-colour);
+	--godot-tab-tabbar-background-content-margins: 0;
+	/* ──────────────────────────────────────────────────────────────────────── */
+	
+	/* ────── Line Edit ─────────────────────────────────────────────────────── */
+	/* Colours */
+	--godot-line-edit-caret-colour: var(--godot-font-colour);
+	--godot-line-edit-clear-button-colour: var(--godot-font-colour);
+	--godot-line-edit-clear-button-pressed-colour: var(--color-accent);
+	--godot-line-edit-font-colour: var(--godot-font-colour);
+	--godot-line-edit-font-outline-colour: transparent;
+	--godot-line-edit-font-placeholder-colour: #ffffff80;
+	--godot-line-edit-font-selected-colour: #ffffffff;
+	--godot-line-edit-font-uneditable-colour: #ffffffa6;
+	--godot-line-edit-selection-colour: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
+	/* Constants */
+	--godot-line-edit-caret-width: 1px;
+	--godot-line-edit-minimum-character-width: 4px;
+	--godot-line-edit-outline-size: 0;
+	/* Styles */
+	/* Focus */
+	--godot-line-edit-focus-bg-colour: transparent;
+	--godot-line-edit-focus-skew-x: 0;
+	--godot-line-edit-focus-skew-y: 0;
+	--godot-line-edit-focus-skew: skew(var(--godot-line-edit-focus-skew-x), var(--godot-line-edit-focus-skew-y));
+	--godot-line-edit-focus-border-width: 4px;
+	--godot-line-edit-focus-border-colour: var(--color-accent);
+	--godot-line-edit-focus-corner-radius: 6px;
+	--godot-line-edit-focus-expand-margin: 0;
+	--godot-line-edit-focus-shadow-colour: #00000099;
+	--godot-line-edit-focus-shadow-size: 0;
+	--godot-line-edit-focus-shadow-offset-x: 0;
+	--godot-line-edit-focus-shadow-offset-y: 0;
+	--godot-line-edit-focus-shadow: var(--godot-line-edit-focus-shadow-offset-x) var(--godot-line-edit-focus-shadow-offset-y) 0 var(--godot-line-edit-focus-shadow-size) var(--godot-line-edit-focus-shadow-colour);
+	--godot-line-edit-focus-content-margin: 10px 12px 10px 12px;
+	/* Normal */
+	--godot-line-edit-normal-bg-colour: var(--godot-background-secondary-alt);
+	--godot-line-edit-normal-skew-x: 0;
+	--godot-line-edit-normal-skew-y: 0;
+	--godot-line-edit-normal-skew: skew(var(--godot-line-edit-normal-skew-x), var(--godot-line-edit-normal-skew-y));
+	--godot-line-edit-normal-border-width: 0 0 4px 0;
+	--godot-line-edit-normal-border-colour: #1d2229;
+	--godot-line-edit-normal-corner-radius: 6px 6px 0 0;
+	--godot-line-edit-normal-expand-margin: 0 0 4px 0;
+	--godot-line-edit-normal-shadow-colour: #00000099;
+	--godot-line-edit-normal-shadow-size: 0;
+	--godot-line-edit-normal-shadow-offset-x: 0;
+	--godot-line-edit-normal-shadow-offset-y: 0;
+	--godot-line-edit-normal-shadow: var(--godot-line-edit-focus-shadow-offset-x) var(--godot-line-edit-focus-shadow-offset-y) 0 var(--godot-line-edit-focus-shadow-size) var(--godot-line-edit-focus-shadow-colour);
+	--godot-line-edit-normal-content-margin: 10px 12px 10px 12px;
+	/* Read Only */
+	--godot-line-edit-readonly-bg-colour: #303743ff;
+	--godot-line-edit-readonly-skew-x: 0;
+	--godot-line-edit-readonly-skew-y: 0;
+	--godot-line-edit-readonly-skew: skew(var(--godot-line-edit-readonly-skew-x), var(--godot-line-edit-readonly-skew-y));
+	--godot-line-edit-readonly-border-width: 0 0 4px 0;
+	--godot-line-edit-readonly-border-colour: var(--godot-background-secondary-alt);
+	--godot-line-edit-readonly-corner-radius: 6px 6px 0 0;
+	--godot-line-edit-readonly-expand-margin: 0;
+	--godot-line-edit-readonly-shadow-colour: #00000099;
+	--godot-line-edit-readonly-shadow-size: 0;
+	--godot-line-edit-readonly-shadow-offset-x: 0;
+	--godot-line-edit-readonly-shadow-offset-y: 0;
+	--godot-line-edit-readonly-shadow: var(--godot-line-edit-focus-shadow-offset-x) var(--godot-line-edit-focus-shadow-offset-y) 0 var(--godot-line-edit-focus-shadow-size) var(--godot-line-edit-focus-shadow-colour);
+	--godot-line-edit-readonly-content-margin: 10px 12px 10px 12px;
+	/* ──────────────────────────────────────────────────────────────────────── */
+
+
+	/* Misc */
+	/* ──────────────────────────────────────────────────────────────────────── */
+	--godot-error-colour: #ff786b;
+	--godot-error-colour-rgb: 256, 120, 107;
+	--godot-success-colour: #73f280;
+	--godot-success-colour-rgb: 115, 242, 128;
+	--godot-warning-colour: #ffde66;
+	--godot-warning-colour-rgb: 255, 222, 102;
+
+	--godot-highlight-symbol-colour: #abc9ff;
+	--godot-highlight-symbol-colour-rgb: 171, 201, 255;
+	--godot-highlight-keyword-colour: ;
+	--godot-highlight-keyword-colour-rgb: ;
+	--godot-highlight-control-flow-keyword-colour: ;
+	--godot-highlight-control-flow-keyword-colour-rgb: ;
+	--godot-highlight-base-type-colour: ;
+	--godot-highlight-base-type-colour-rgb: ;
+	--godot-highlight-engine-type-colour: ;
+	--godot-highlight-engine-type-colour-rgb: ;
+	--godot-highlight-user-type-colour: ;
+	--godot-highlight-user-type-colour-rgb: ;
+	--godot-highlight-comment-colour: ;
+	--godot-highlight-comment-colour-rgb: ;
+	--godot-highlight-doc-comment-colour: ;
+	--godot-highlight-doc-comment-colour-rgb: ;
+	--godot-highlight-string-colour: ;
+	--godot-highlight-string-colour-rgb: ;
+	--godot-highlight-bg-colour: ;
+	--godot-highlight-bg-colour-rgb: ;
+	--godot-highlight-completion-bg-colour: ;
+	--godot-highlight-completion-bg-colour-rgb: ;
+	--godot-highlight-completion-selected-colour: ;
+	--godot-highlight-completion-selected-colour-rgb: ;
+	--godot-highlight-completion-existing-colour: ;
+	--godot-highlight-completion-existing-colour-rgb: ;
+	--godot-highlight-completion-scroll-colour: ;
+	--godot-highlight-completion-scroll-colour-rgb: ;
+	--godot-highlight-completion-scroll-hovered-colour: ;
+	--godot-highlight-completion-scroll-hovered-colour-rgb: ;
+	--godot-highlight-completion-font-colour: ;
+	--godot-highlight-completion-font-colour-rgb: ;
+	
+	--godot-background-tooltip-colour: #0f1217;
+	--godot-background-tooltip-alpha: 1.0;
+	/* ──────────────────────────────────────────────────────────────────────── */
+
+
+	/* ──── Values ──────────────────────────────────────────────────────────── */
+	--godot-corner-radius: 6px;
+	--godot-width-border-focus: 4px;
+	/* ──────────────────────────────────────────────────────────────────────── */
+
+
+	/* Obsidian Variables */
 	/* ──── Foundations ─────────────────────────────────────────────────────── */
 	/* Borders */
-	--border-width: 1px;
+	/* --border-width: 3px; */
+
+	/* Cursor */
+	/* --cursor: default; */
+	/* --cursor-link: pointer; */
 	
 	/* Base Colours */
 	/* --color-base-00: #1e1e1e; */
@@ -34,6 +406,7 @@ body {
 	/* --accent-s: '??'; */
 	/* --accent-l: '??'; */
 	
+	/* TODO: Change the Base Colours to Godot versions of the same colour names */
 	/* Extended Colours */
 	/* --color-red-rgb: 251, 70, 76; */
 	/* --color-red: #fb464c; */
@@ -58,27 +431,28 @@ body {
 	/* --mono-rgb-100: 255, 255, 255; */
 	
 	/* Semantic Colours */
-	/* --background-primary: var(--color-base-00); */
-	/* --background-primary-alt: var(--color-base-10); */
-	/* --background-secondary: var(--color-base-20); */
-	/* --background-secondary-alt: var(--color-base-30); */
-	/* --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067); */
-	/* --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.1); */
-	/* --background-modifier-box-shadow: rgba(0, 0, 0, 0.3); NOTE: Not in Obsidian docs. */
-	/* --background-modifier-cover: rgba(10, 10, 10, 0.4); NOTE: Not in Obsidian docs. */
-	/* --background-modifier-border: var(--color-base-30); */
-	/* --background-modifier-border-hover: var(--color-base-35); */
-	/* --background-modifier-border-focus: var(--color-base-40); */
-	/* --background-modifier-error-rgb: var(--color-red-rgb); */
-	/* --background-modifier-error: var(--color-red); */
-	/* --background-modifier-error-hover: var(--color-red); */
-	/* --background-modifier-success-rgb: var(--color-green-rgb); */
-	/* --background-modifier-success: var(--color-green); */
-	/* --background-modifier-message: rgba(0, 0, 0, 0.9); */
-	/* --background-modifier-form-field: var(--color-base-25); */
+	--background-primary: #363d4a;
+	--background-primary-alt: #21262E;
+	--background-secondary: #21262E;
+	--background-secondary-alt: #252B34;
+	--background-modifier-hover: hsl(var(--accent-h) var(--accent-s) var(--accent-l) / 0.2);
+	--background-modifier-active-hover: hsl(var(--accent-h) var(--accent-s) var(--accent-l) / 0.2);
+	--background-modifier-box-shadow: unset; /* NOTE: Not in Obsidian docs. */
+	/* --background-modifier-cover: rgba(10, 10, 10, 0.4); NOTE: Not in Obsidian docs. Has less specificity and will not change easily without "!important". */
+	/* TODO: Seperate out this variable as it has too much control. Changes UI in editor and within notes. Will want separate. */
+	--background-modifier-border: hsl(var(--accent-h) var(--accent-s) var(--accent-l) / 0.3);
+	--background-modifier-border-hover: hsl(var(--accent-h) var(--accent-s) var(--accent-l) / 0.3);
+	--background-modifier-border-focus: var(--color-accent);
+	--background-modifier-error-rgb: var(--godot-error-colour-rgb);
+	--background-modifier-error: var(--godot-error-colour);
+	--background-modifier-error-hover: var(--godot-error-colour);
+	--background-modifier-success-rgb: var(--godot-success-colour-rgb);
+	--background-modifier-success: var(--godot-success-colour);
+	--background-modifier-message: var(--godot-background-tooltip-colour);
+	--background-modifier-form-field: var(--background-secondary-alt);
 	/* --background-modifier-form-field-hover: var(--background-modifier-form-field); NOTE: Not in Obsidian docs. */
 
-	/* Interactive Colours */	
+	/* Interactive Colours */
 	/* --interactive-normal: var(--color-base-30); */
 	/* --interactive-hover: var(--color-base-35); */
 	/* --interactive-accent: var(--color-accent); */
@@ -112,13 +486,13 @@ body {
 	/* Icons */
 	/* --icon-size: var(--icon-m); */
 	/* --icon-stroke: var(--icon-m-stroke-width); */
-	/* --icon-color: var(--text-muted); */
-	/* --icon-color-hover: var(--text-muted); */
-	/* --icon-color-active: var(--text-accent); */
-	/* --icon-color-focused: var(--text-normal); */
-	/* --icon-opacity: 0.85; */
-	/* --icon-opacity-hover: 1; */
-	/* --icon-opacity-active: 1; */
+	--icon-color: var(--godot-icon-colour-normal);
+	--icon-color-hover: var(--godot-icon-colour-hover);
+	--icon-color-active: var(--godot-icon-colour-pressed);
+	--icon-color-focused: var(--godot-icon-colour-focus);
+	--icon-opacity: 0.85;
+	--icon-opacity-hover: 1.0;
+	--icon-opacity-active: 1.0;
 	/* --clickable-icon-radius: var(--radius-s); */
 
 	/* Layers */
@@ -134,10 +508,10 @@ body {
 	/* --layer-dragged-item: 80; */
 
 	/* Radiuses */
-	/* --radius-s: 4px; */
-	/* --radius-m: 8px; */
-	/* --radius-l: 12px; */
-	/* --radius-xl: 16px; */
+	--radius-s: var(--godot-radius-s);
+	--radius-m: var(--godot-corner-radius);
+	/* --radius-l: 12px */
+	/* --radius-xl: 16px */
 
 	/* Spacing */
 	/* --size-2-1: 2px; */
@@ -156,7 +530,7 @@ body {
 	/* --size-4-18: 72px; */
 
 	/* Typography */
-	/* --font-text-size: 16px; NOTE: Changed by user in "Settings > Appearance > Font Size" */
+	--font-text-size: 14px; /* NOTE: Changed by user in "Settings > Appearance > Font Size" */
 	/* --font-smallest: 0.8em; */
 	/* --font-smaller: 0.875em; */
 	/* --font-small: 0.933em; */
@@ -169,49 +543,84 @@ body {
 
 	/* ──── Components ──────────────────────────────────────────────────────── */
 	/* Button */
-	/* --button-radius: var(--input-radius); */
+	--button-radius: var(--radius-m);
 
 	/* Checkbox */
-	/* --checkbox-radius: var(--radius-s); */
+	--checkbox-radius: var(--radius-s);
 	/* --checkbox-size: var(--font-text-size); */
-	/* --checkbox-marker-color: var(--background-primary); */
-	/* --checkbox-color: var(--interactive-accent); */
-	/* --checkbox-color-hover: var(--interactive-accent-hover); */
-	/* --checkbox-border-color: var(--text-faint); */
-	/* --checkbox-border-color-hover: var(--text-muted); */
+	--checkbox-marker-color: #1a1a1a;
+	--checkbox-color: rgba(var(--mono-rgb-100), 0.75);
+	--checkbox-color-hover: rgba(var(--mono-rgb-100), 0.75);
+	--checkbox-border-color: rgba(var(--mono-rgb-100), 0.4);
+	--checkbox-border-color-hover: rgba(var(--mono-rgb-100), / 0.4);
+	--checklist-done-decoration: none;
+	--checklist-done-color: hsl(var(--accent-h) var(--accent-s) var(--accent-l) / 1.0);
 	/* --checkbox-margin-inline-start: 0.85em; */
-	/* --checklist-done-decoration: line-through; */
-	/* --checklist-done-color: var(--text-muted); */
 
 	/* Color Input */
-	/* Slightly larger colour input button */
-	/* --swatch-radius: 14px; */
-	/* --swatch-height: 22px; */
-	/* --swatch-width: 22px; */
-	/* --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15); */
-	
+	/* NOTE: Slightly larger colour input button */
+	--swatch-radius: 13px;
+	--swatch-height: 26px;
+	--swatch-width: 26px;
+	--swatch-shadow: inset 0 0 0 1px rgba(0 0 0 / 0.3);
+
 	/* Dialog */
 	/* --dialog-width: 560px; */
 	/* --dialog-max-width: 80vw */
 	/* --dialog-max-height: 85vh */
 
 	/* Dragging */
-	/* --drag-ghost-background: rgba(0, 0, 0, 0.85); */
-	/* --drag-ghost-text-color: #fff; */
+	/* NOTE: Remove the shadow to match Godot's file drag style. */
+	--drag-ghost-background: rgba(0 0 0 / 0.0);
+	--drag-ghost-text-color: rgba(var(--mono-rgb-100), 0.7);
+
+	/* NOTE: Replaces Obsidian icon in drag ghost with Godot equivalent */
+	.drag-ghost {
+		box-shadow: none;
+
+		/* Setting "display" to none to hide the Obsidian icon */
+		svg {
+			display: none;
+		}
+
+		/* Using pseudo classes to replace icons */
+		.drag-ghost-self::before {
+		content: "";
+		stroke-width: var(--icon-xs-stroke-width);
+		width: var(--icon-xs);
+		height: var(--icon-xs);
+		mask: var(--godot-file-icon) no-repeat center;
+		mask-size: contain;
+		background-color: var(--drag-ghost-text-color);
+		align-self: center;
+		margin-right: var(--size-2-2);
+		}
+	}
 
 	/* Dropdowns */
 	/* --dropdown-background: var(--background-primary); */
-	/* --dropdown-background-hover: rgba(255 255 255 / 0.1); */
+	--dropdown-background-hover: rgba(var(--mono-rgb-100), 0.1);
 	/* --dropdown-background-blend-mode: hard-light; */
 	/* --dropdown-background-position: right 0.5em top 50%, 0 0; */
 	/* --dropdown-background-size: 1em auto, 100%; */
 	/* --dropdown-padding: 0 1.9em 0 0.8em; */
 	
+	/* A bit funky with how the image is replaced. */
+	/* I think the original image has some transparency, which means it blends better. */
+	/* Could try using "::before" or "::after" to add my own icon. */
+	.dropdown { /* Override up-down arrows icon for dropdowns */
+		/* TODO: Change the icon to use an up-down arrow icon. */
+		background-image: var(--godot-code-fold-down-arrow-icon);
+		/* background-color: rgba(0, 0, 0, 0.09); */
+		/* background-blend-mode: darken; */
+	}
+
+	/* Used within notes. Not too useful. Would like to add custom indentation guide for note selection panel. that looks like Godot's */
 	/* Indentation Guides */
 	/* --indent-unit: 0.5625em; NOTE: Probably not worth changing. */
 	/* --indentation-guide-width: 1px; */
 	/* --indentation-guide-width-active: 1px; */
-	/* --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12); */
+	--indentation-guide-color: rgba(var(--mono-rgb-100), 0.55);
 	/* --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3); */
 	/* --indentation-guide-editing-indent: 0.85em; */
 	/* --indentation-guide-reading-indent: -0.85em; */
@@ -219,14 +628,14 @@ body {
 
 	/* Modal */
 	/* --modal-background: var(--background-primary); */
-	/* --modal-width: 90vw; */
-	/* --modal-height: 85vh; */
-	/* --modal-max-width: 1100px; */
-	/* --modal-max-height: 1000px; */
+	/* --modal-width: var(--modal-width); */
+	/* --modal-height: var(--modal-height); */
+	/* --modal-max-width: var(--modal-max-width); */
+	/* --modal-max-height: var(--modal-max-height); */
 	/* --modal-max-width-narrow: 800px; */
 	/* --modal-border-width: var(--border-width); */
-	/* --modal-border-color: var(--color-base-40, var(--background-modifier-border-focus)); */
-	/* --modal-radius: var(--radius-l); */
+	/* --modal-border-color: var(--background-primary-alt); TODO: Think about this one some more */
+	--modal-radius: var(--radius-m);
 	/* --modal-community-sidebar-width: 280px; NOTE: Only for the community themes and plugins modal panel */
 
 	/* WARNING: Might have some issues with Multi-Select as some variables are defined higher in CSS and can't be overridden here. */
@@ -254,24 +663,25 @@ body {
 	/* Navigation */
 	/* --nav-item-size: var(--font-ui-small); */
 	/* --nav-item-color: var(--text-muted); */
-	/* --nav-item-color-hover: var(--text-normal); */
+	--nav-item-color-hover: var(--godot-tree-font-colour-hovered);
 	/* --nav-item-color-active: var(--text-normal); */
-	/* --nav-item-color-selected: var(--text-normal); */
+	--nav-item-color-active: var(--godot-tree-font-colour-selected);
+	--nav-item-color-selected: var(--godot-tree-font-colour-selected);
 	/* --nav-item-color-highlighted: var(--text-accent); */
 	/* --nav-item-background-hover: var(--background-modifier-hover); */
 	/* --nav-item-background-active: var(--background-modifier-hover); */
-	/* --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.15); */
-	/* --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1) var(--size-4-6); */
+	--nav-item-background-selected: hsla(var(--color-accent-hsl), 0.275);
+	--nav-item-padding: var(--size-2-1) var(--size-4-1) var(--size-2-1) var(--size-4-6);
 	/* --nav-item-parent-padding: var(--nav-item-padding); */
-	/* --nav-item-children-padding-start: var(--size-2-2); */
-	/* --nav-item-children-margin-start: var(--size-4-3); */
+	--nav-item-children-padding-start: var(--size-4-1);
+	--nav-item-children-margin-start: var(--size-4-3);
 	/* --nav-item-weight: inherit; */
 	/* --nav-item-weight-hover: inherit; */
 	/* --nav-item-weight-active: inherit; */
 	/* --nav-item-white-space: pre; */
-	/* --nav-indentation-guide-width: var(--indentation-guide-width); */
-	/* --nav-indentation-guide-color: var(--indentation-guide-color); */
-	/* --nav-collapse-icon-color: var(--collapse-icon-color); */
+	--nav-indentation-guide-width: 0;
+	/* --nav-indentation-guide-color: var(--indentation-guide-color) */
+	--nav-collapse-icon-color: rgba(var(--godot-icon-colour-normal-rgb), 0.45);
 	/* --nav-collapse-icon-color-collapsed: var(--text-faint); */
 	/* --nav-tag-background: transparent; */
 	/* --nav-tag-radius: var(--radius-s); */
@@ -288,6 +698,38 @@ body {
 	/* --nav-heading-weight: var(--font-medium); */
 	/* --nav-heading-weight-hover: var(--font-medium); */
 	
+	.nav-folder-children {
+		position: relative;
+	}
+
+	.nav-folder-children::before {
+		content: "";
+		position: absolute;
+		width: 1px;
+		margin-left: -5px;
+		height: calc(100% - ((var(--line-height-tight) * var(--font-text-size)) / 2.0) + 1px);
+		background-color: var(--godot-tree-relationship-line-colour);
+	}
+	
+	.nav-file, .nav-folder {
+		position: relative;
+	}
+
+	.nav-file::before, .nav-folder::before {
+		content: "";
+		position: absolute;
+		bottom: calc((var(--line-height-tight) * var(--font-text-size)) / 2.0 + 1px);
+		top: calc((var(--line-height-tight) * var(--font-text-size)) / 2.0 + 1px);
+		left: -4px;
+		height: 1px;
+		width: 20px;
+		background-color: var(--godot-tree-relationship-line-colour);
+	}
+
+	.nav-folder::before {
+		width: 6px;
+	}
+	
 	/* Popover */
 	/* --popover-width: 450px; */
 	/* --popover-height: 400px; */
@@ -300,41 +742,74 @@ body {
 	/* --prompt-input-height: 40px; */
 	/* --prompt-width: 700px; */
 	/* --prompt-max-width: 80vw; */
-	/* --prompt-max-height: 70vh; */
+	--prompt-max-height: 80vh;
 	/* --prompt-border-width: var(--border-width); */
-	/* --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus)); */
+	--prompt-border-color: var(--color-accent, var(--background-modifier-border-focus));
+
+	.prompt-results {
+		border-radius: var(--radius-m);
+		background-color: var(--background-secondary);
+	}
 
 	/* Slider */
-	/* --slider-thumb-border-width: 1px; */
-	/* --slider-thumb-border-color: var(--background-modifier-border-hover); */
-	/* --slider-thumb-height: 18px; */
-	/* --slider-thumb-width: 18px; */
+	--slider-thumb-border-width: 0;
+	/* --slider-thumb-border-color: var(--godot-slider-grabber-colour); */
+	--slider-thumb-height: 16px;
+	--slider-thumb-width: 16px;
 	/* --slider-thumb-y: -6px; */
 	/* --slider-thumb-radius: 50%; */
 	/* --slider-s-thumb-size: 15px; */
 	/* --slider-s-thumb-position: -5px; */
-	/* --slider-track-background: var(--background-modifier-border); */
-	/* --slider-track-height: 3px; */
+	--slider-track-background: var(--godot-slider-colour);
+	--slider-track-height: 4px;
+
+	.slider::-webkit-slider-thumb {
+		mask-image: var(--godot-gui-slider-grabber-icon);
+		-webkit-mask-image: var(--godot-gui-slider-grabber-icon);
+		mask-repeat: no-repeat;
+		mask-position: center;
+		mask-size: cover;
+	}
+	
+	.slider::-webkit-slider-thumb:hover {
+		mask-image: var(--godot-gui-slider-grabber-icon);
+		-webkit-mask-image: var(--godot-gui-slider-grabber-hl-icon);
+		mask-repeat: no-repeat;
+		mask-position: center;
+		mask-size: cover;
+	}
+
+	/* Currently doesn't work. Needs customs JS to move the percentage of the bar.
+	Need to update local variable "--slider-value" to make the bar move. */
+	.slider::-webkit-slider-runnable-track {
+		--slider-value: 35%;
+		border-radius: var(--slider-track-height);
+		background: linear-gradient(to right, var(--godot-slider-grabber-area-colour) var(--slider-value), var(--slider-track-background) 0);
+		height: var(--slider-track-height);
+	}
 
 	/* Tabs */
-	/* --tab-background-active: var(--background-primary); */
-	/* --tab-text-color: var(--text-faint); */
-	/* --tab-text-color-active: var(--text-muted); */
-	/* --tab-text-color-focused: var(--text-muted); */
-	/* --tab-text-color-focused-active: var(--text-muted); */
-	/* --tab-text-color-focused-highlighted: var(--text-accent); */
-	/* --tab-text-color-focused-active-current: var(--text-normal); */
-	/* --tab-font-size: var(--font-ui-small); */
+	--tab-background-active: var(--godot-tab-focus-bg-colour);
+	--tab-text-color: var(--godot-tab-font);
+	--tab-text-color-active: var(--godot-tab-font-selected-colour);
+	--tab-text-color-focused: var(--godot-tab-font-selected-colour);
+	--tab-text-color-focused-active: var(--godot-tab-font-hovered-colour);
+	--tab-text-color-focused-active: var(--godot-tab-font-hovered-colour);
+	--tab-text-color-focused-highlighted: var(--godot-tab-font-hovered-colour);
+	--tab-text-color-focused-active-current: var(--godot-tab-font-selected-colour);
+	--tab-font-size: var(--godot-tab-font-size);
 	/* --tab-font-weight: inherit; */
 	/* --tab-container-background: var(--background-secondary); */
-	/* --tab-divider-color: var(--background-modifier-border-hover); */
-	/* --tab-outline-color: var(--divider-color); */
+	--tab-divider-color: transparent;
+	--tab-outline-color: unset;
 	/* --tab-outline-width: 1px; */
-	/* --tab-curve: 6px; */
-	/* --tab-radius: var(--radius-s); */
-	/* --tab-radius-active: 6px 6px 0 0; */
+	--tab-curve: 0;
+	--tab-radius: 0;
+	--tab-radius-active: 0;
 	/* --tab-width: 200px; */
-	/* --tab-max-width: 320px; */
+	/* --tab-max-width: 320px */
+
+	/* NOTE: For mobile devices I believe */
 	/* --tab-switcher-menubar-background: var(--mobile-sidebar-background); */
 	/* --tab-switcher-background: var(--background-secondary); */
 	/* --tab-switcher-preview-radius: var(--radius-xl); */
@@ -343,7 +818,7 @@ body {
 	/* --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent); */
 
 	/* Stacked Tabs */
-	/* --tab-stacked-pane-width: 700px; */
+	--tab-stacked-pane-width: 100%;
 	/* --tab-stacked-header-width: var(--header-height); */
 	/* --tab-stacked-font-size: var(--font-ui-small); */
 	/* --tab-stacked-font-weight: 400; */
@@ -351,14 +826,15 @@ body {
 	/* --tab-stacked-text-transform: rotate(0deg); */
 	/* --tab-stacked-text-writing-mode: vertical-lr; */
 	/* --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05); */
-
+	--tab-stacked-shadow: var(--godot-tab-focus-shadow);
+	
 	/* Text Input */
-	/* --input-height: 30px; */
+	--input-height: 20px;
 	/* --input-padding: var(--size-4-1) var(--size-4-2); */
-	/* --input-radius: 5px; */
+	--input-radius: var(--godot-line-edit-normal-corner-radius);
 	/* --input-font-weight: var(--font-normal); */
-	/* --input-border-width: 1px; */
-	/* --input-border-width-focus: 2px; */
+	--input-border-width: var(--input-border-width);
+	--input-border-width-focus: var(--godot-line-edit-focus-border-width);
 	/* --input-placeholder-color: var(--text-faint); */
 	/* --input-date-separator: var(--text-faint); */
 	/* NOTE: Not in Obsidian docs. */
@@ -439,28 +915,28 @@ body {
 	/* --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border), inset 0 0 0 1px var(--background-modifier-border); NOTE: Not sure where this appears. */
 
 	/* Blockquote */
-	/* --blockquote-border-thickness: 2px; */
+	--blockquote-border-thickness: 6px;
 	/* --blockquote-border-color: var(--interactive-accent); */
-	/* --blockquote-font-style: normal; */
+	--blockquote-font-style: italic;
 	/* --blockquote-color: inherit; */
-	/* --blockquote-background-color: transparent; */
-	/* --blockquote-background-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1); */
+	--blockquote-background-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
 
 	/* Callout */
-	/* --callout-border-width: 0px; */
-	/* --callout-border-opacity: 0.25; */
-	/* --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6); */
-	/* --callout-radius: var(--radius-s); */
-	/* --callout-blend-mode: var(--highlight-mix-blend-mode); */
-	/* --callout-title-color: inherit; */
+	--callout-border-width: 2px;
+	--callout-border-opacity: 1;
+	--callout-padding: var(--size-4-4) var(--size-4-4) var(--size-4-4) var(--size-4-6);
+	--callout-radius: var(--radius-m);
+	--callout-blend-mode: normal;
+	/* --callout-title-color: inherit */
 	/* --callout-title-padding: 0; */
 	/* --callout-title-size: inherit; */
 	/* --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier)); */
 	/* --callout-content-padding: 0; */
 	/* --callout-content-background: transparent; */
-	/* --callout-bug: var(--color-red-rgb); */
-	/* --callout-default: var(--color-blue-rgb); */
-	/* --callout-error: var(--color-red-rgb); */
+	
+	--callout-bug: var(--godot-error-colour-rgb);
+	--callout-default: var(--godot-highlight-symbol-colour-rgb);
+	--callout-error: var(--godot-error-colour-rgb);
 	/* --callout-example: var(--color-purple-rgb); */
 	/* --callout-fail: var(--color-red-rgb); */
 	/* --callout-important: var(--color-cyan-rgb); */
@@ -473,28 +949,31 @@ body {
 	/* --callout-warning: var(--color-orange-rgb); */
 	/* --callout-quote: 158, 158, 158; */
 
+	/* TODO: Replace the code colours with the original Obsidian colour variables after changing the values of the Obsidian colour variables */
 	/* Code */
 	/* --code-white-space: pre-wrap; */
-	/* --code-border-width: 0px; */
+	/* --code-border-width: 0; */
 	/* --code-border-color: var(--background-modifier-border); */
 	/* --code-bracket-background: var(--background-modifier-hover); */
 	/* --code-radius: var(--radius-s); */
 	/* --code-size: var(--font-smaller); */
 	/* --code-background: var(--background-primary-alt); */
-	/* --code-normal: var(--text-normal); */
-	/* --code-comment: var(--text-faint); */
-	/* --code-function: var(--color-yellow); */
-	/* --code-important: var(--color-orange); */
-	/* --code-keyword: var(--color-pink); */
-	/* --code-operator: var(--color-red); */
-	/* --code-property: var(--color-cyan); */
-	/* --code-punctuation: var(--text-muted); */
-	/* --code-string: var(--color-green); */
-	/* --code-tag: var(--color-red); */
-	/* --code-value: var(--color-purple); */
+	--code-normal: var(--text-normal);
+	--code-comment: rgba(var(--godot-font-colour-rgb), 0.5);
+	--code-function: #66e6ff; /* Use: #57b3ff when the function is being called from a variable. */
+	--code-important: #ffb373;
+	--code-keyword: #ff7085;
+	--code-operator: #abc9ff;
+	--code-property: var(--text-normal);
+	--code-punctuation: #abc9ff;
+	--code-string: #ffeda1;
+	--code-tag: var(--text-normal);
+	--code-value: #a1ffe0;
 
+	
+	/* TODO: Think about the style of this a bit more */
 	/* Embed */
-	/* --embed-max-height: 4000px; */
+	--embed-max-height: 500px;
 	/* --embed-canvas-max-height: 400px; */
 	/* --embed-background: inherit; */
 	/* --embed-border-start: 2px solid var(--interactive-accent); */
@@ -515,6 +994,8 @@ body {
 	/* --file-header-justify: center; */
 
 	/* Footnote */
+	/* NOTE: Obsidian lists this as the only variable to change. Don't know why, but there are others that can be changed. */
+	/* --footnote-size: var(--font-smaller); */
 	/* --footnote-divider-color-active: var(--metadata-divider-color-focus); */
 	/* --footnote-divider-color: var(--metadata-divider-color); */
 	/* --footnote-divider-width: 1px; */
@@ -528,9 +1009,9 @@ body {
 	/* --footnote-padding-block: var(--size-2-3); */
 	/* --footnote-padding-inline: var(--size-2-3); */
 	/* --footnote-radius: var(--radius-s); */
-	/* --footnote-size: var(--font-smaller); NOTE: Obsidian lists this as the only variable to change. Don't know why, but there are others that can be changed. */
 
 	/* Headings */
+	/* NOTE: Not found in the main CSS file for Obsidian */
 	/* --heading-formatting: var(--text-faint); */
 	/* --heading-spacing: calc(var(--p-spacing) * 2.5); */
 	/* --h1-color: inherit; */
@@ -587,25 +1068,26 @@ body {
 	/* --hr-thickness: 2px; */
 
 	/* Inline Title */
-	/* --inline-title-color: var(--h1-color); */
+	--inline-title-color: var(--color-accent);
 	/* --inline-title-font: var(--h1-font); */
 	/* --inline-title-line-height: var(--h1-line-height); */
 	/* --inline-title-size: var(--h1-size); */
 	/* --inline-title-style: var(--h1-style); */
 	/* --inline-title-variant: var(--h1-variant); */
-	/* --inline-title-weight: var(--h1-weight); */
-	/* --inline-title-margin-bottom: 0.5em; NOTE: Obsidian doesn't show this one on it's documentation page. Might not need/want to touch. */
+	--inline-title-weight: var(--h1-weight);
+	/* NOTE: Obsidian doesn't show this one on it's documentation page. Might not need/want to touch. */
+	/* --inline-title-margin-bottom: 0.5em; */
 
 	/* Link */
 	/* --link-color: var(--text-accent); */
-	/* --link-color-hover: var(--text-accent-hover); */
-	/* --link-decoration: underline; */
+	--link-color-hover: var(--text-accent);
+	--link-decoration: none;
 	/* --link-decoration-hover: underline; */
 	/* --link-decoration-thickness: auto; */
 	/* --link-weight: var(--font-weight); */
 	/* --link-external-color: var(--text-accent); */
 	/* --link-external-color-hover: var(--text-accent-hover); */
-	/* --link-external-decoration: underline; */
+	--link-external-decoration: none;
 	/* --link-external-decoration-hover: underline; */
 	/* --link-external-filter: none; NOTE: Not mentioned in Obsidian docs. Might not want to touch. */
 	/* --link-unresolved-color: var(--text-accent); */
@@ -614,17 +1096,22 @@ body {
 	/* --link-unresolved-decoration-style: solid; */
 	/* --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3); */
 
+	/* .external-link { */
+		/* TODO: Replace "background-image" with the external link icon in Godot. */
+		/* background-image: var(--godot-folder-browse-icon); */
+	/* } */
+
 	/* List */
 	/* --list-indent: calc(var(--indent-unit) * var(--indent-size)); */
 	/* --list-indent-editing: 0.75em; */
 	/* --list-indent-source: 0; */
 	/* --list-spacing: 0.075em; */
-	/* --list-marker-color: var(--text-faint); */
+	--list-marker-color: var(--godot-font-colour);
 	/* --list-marker-color-hover: var(--text-muted); */
 	/* --list-marker-color-collapsed: var(--text-accent); */
 	/* --list-bullet-border: none; */
 	/* --list-bullet-radius: 50%; */
-	/* --list-bullet-size: 0.3em; */
+	--list-bullet-size: 0.55em;
 	/* --list-bullet-transform: none; */
 	/* --list-numbered-style: decimal; */
 	/* --list-bullet-end-padding: 1.3rem; */
@@ -643,10 +1130,10 @@ body {
 	/* --metadata-divider-color-focus: transparent; */
 	/* --metadata-divider-width: 0; */
 	/* --metadata-gap: 3px; */
-	/* --metadata-property-padding: 0; */
-	/* --metadata-property-radius: 6px; */
-	/* --metadata-property-radius-hover: 6px; */
-	/* --metadata-property-radius-focus: 6px; */
+	--metadata-property-padding: 0 10px;
+	--metadata-property-radius: var(--godot-radius-s);
+	--metadata-property-radius-hover: var(--godot-radius-s);
+	--metadata-property-radius-focus: var(--godot-radius-s);
 	/* --metadata-property-background: transparent; */
 	/* --metadata-property-background-hover: transparent; */
 	/* --metadata-property-background-active: var(--background-modifier-hover); */
@@ -658,7 +1145,7 @@ body {
 	/* --metadata-label-font: var(--font-interface); */
 	/* --metadata-label-font-size: var(--font-smaller); */
 	/* --metadata-label-font-weight: inherit; */
-	/* --metadata-label-text-color: var(--text-muted); */
+	--metadata-label-text-color: var(--color-accent);
 	/* --metadata-label-text-color-hover: var(--text-muted); */
 	/* --metadata-label-width: 9em; */
 	/* --metadata-input-height: calc(var(--font-text-size) * 1.75); */
@@ -674,16 +1161,16 @@ body {
 
 	/* Table */
 	/* --table-background: transparent; */
-	/* --table-border-width: 1px; */
+	--table-border-width: 0;
 	/* --table-border-color: var(--background-modifier-border); */
 	/* --table-white-space: break-spaces; */
-	/* --table-header-background: var(--table-background); */
-	/* --table-header-background-hover: inherit; */
-	/* --table-header-border-width: var(--table-border-width); */
-	/* --table-header-border-color: var(--table-border-color); */
+	--table-header-background: var(--background-primary-alt);
+	--table-header-background-hover: var(--background-primary-alt);
+	--table-header-border-width: 0;
+	--table-header-border-color: var(--color-accent);
 	/* --table-header-font: inherit; */
 	/* --table-header-size: var(--table-text-size); NOTE: Not in Obsidian docs. */
-	/* --table-header-weight: calc(var(--font-weight) + var(--bold-modifier)); */
+	--table-header-weight: 700;
 	/* --table-header-color: var(--text-normal); */
 	/* --table-line-height: var(--line-height-tight); */
 	/* --table-text-size: var(--font-text-size); */
@@ -700,7 +1187,7 @@ body {
 	/* --table-selection: hsla(var(--color-accent-hsl), 0.1); */
 	/* --table-selection-blend-mode: var(--highlight-mix-blend-mode); */
 	/* --table-selection-border-color: var(--interactive-accent); */
-	/* --table-selection-border-width: 2px; */
+	--table-selection-border-width: 4px;
 	/* --table-selection-border-radius: 4px; */
 	/* --table-cell-vertical-alignment: top; */
 	/* --table-drag-handle-background: transparent; */
@@ -708,33 +1195,49 @@ body {
 	/* --table-drag-handle-color: var(--text-faint); */
 	/* --table-drag-handle-color-active: var(--text-on-accent); */
 	/* --table-drop-indicator-half-width: 2px; NOTE: Not in Obsidian docs. */
-	/* --table-add-button-background: transparent; */
-	/* --table-add-button-border-width: var(--table-border-width); */
+	--table-add-button-background: hsla(var(--color-accent-hsl), 0.1);
+	--table-add-button-border-width: 2px;
 	/* --table-add-button-border-color: var(--background-modifier-border); */
+
+	/* TODO: Make new design for tables that fits the Godot Theme better. */
+	/* Leaves the top border colour and width for the header row */
+	/* .cm-html-embed thead tr > th,
+	.markdown-rendered thead tr > th {
+		border-left: var(--table-border-color) solid var(--table-border-width);
+		border-right: var(--table-border-color) solid var(--table-border-width);
+		border-bottom: var(--table-border-color) solid var(--table-border-width);
+	} */
+
+	/* Removes the alternate colour for every alternating row */
+	/* .cm-html-embed thead tr > th:nth-child(2n+2),
+	.markdown-rendered thead tr > th:nth-child(2n+2) {
+		background-color: var(--table-header-background);
+	} */
 
 	/* Tag */
 	/* --tag-size: var(--font-smaller); */
 	/* --tag-color: var(--text-accent); */
-	/* --tag-color-hover: var(--text-accent); */
+	--tag-color-hover: var(--godot-font-colour-hover);
 	/* --tag-decoration: none; */
 	/* --tag-decoration-hover: none; */
-	/* --tag-background: hsla(var(--interactive-accent-hsl), 0.1); */
-	/* --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2); */
-	/* --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15); */
-	/* --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15); */
-	/* --tag-border-width: 0px; */
+	--tag-background: hsla(var(--interactive-accent-hsl), 0.3);
+	--tag-background-hover: hsla(var(--interactive-accent-hsl), 0.8);
+	--tag-border-color: transparent;
+	--tag-border-color-hover: var(--color-accent);
+	/* --tag-border-width: 0; */
 	/* --tag-padding-x: 0.65em; */
-	/* --tag-padding-y: 0.25em; */
+	--tag-padding-y: 0.35em;
 	/* --tag-radius: 2em; */
 	/* --tag-weight: inherit; */
 	/* ──────────────────────────────────────────────────────────────────────── */
 
 
 	/* ──── Window ──────────────────────────────────────────────────────────── */
+	/* TODO: Remove Divider as Godot uses blocks of solid colour to separate windows from eachother */
 	/* Divider */
 	/* --divider-color: var(--background-modifier-border); */
 	/* --divider-color-hover: var(--interactive-accent); */
-	/* --divider-width: 1px; */
+	--divider-width: 0;
 	/* --divider-width-hover: 3px; */
 	/* --divider-vertical-height: 100%; */
 
@@ -747,11 +1250,20 @@ body {
 	/* Scrollbar */
 	/* --scrollbar-width: 12px; NOTE: Not in Obsidian docs. */
 	/* --scrollbar-height: 12px; NOTE: Not in Obsidian docs. */
-	/* --scrollbar-border-width: 3px 3px 3px 2px; NOTE: Not in Obsidian docs. */
+	--scrollbar-border-width: 3px 3px 3px 2px; /* NOTE: Not in Obsidian docs. */
 	/* --scrollbar-radius: var(--radius-l); NOTE: Not in Obsidian docs. */
-	/* --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2); */
-	/* --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05); */
-	/* --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1); */
+	--scrollbar-active-thumb-bg: rgba(249, 249, 249, 1.0);
+	--scrollbar-bg: rgba(255, 255, 255, 0.082); /* BUG: Obsidian makes it transparent without anyway to change it. */
+	--scrollbar-thumb-bg: rgba(255, 255, 255,  0.29);
+
+	:not(.native-scrollbars) ::-webkit-scrollbar {
+		width: 8px; /* Width of the scrollbar */
+		background-color: rgba(255, 255, 255, 0.082);
+	}
+
+	:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
+		border: 12px solid rgba(255, 255, 255, 0.29);
+	}
 
 	/* Sidebar */
 	/* --sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9); */
@@ -761,16 +1273,18 @@ body {
 	/* --sidebar-left-toggle-inner-width-open: 24%; NOTE: Not in Obsidian docs. */
 	/* --sidebar-right-toggle-inner-width-open: 24%; NOTE: Not in Obsidian docs. */
 
+	/* TODO: Change the pencil icon in the Status Bar with a Godot equivalent */
 	/* Status Bar */
 	/* --status-bar-background: var(--background-secondary); */
 	/* --status-bar-border-color: var(--divider-color); */
-	/* --status-bar-border-width: 1px 0 0 1px; */
+	--status-bar-border-width: 0;
 	/* --status-bar-font-size: var(--font-ui-smaller); */
 	/* --status-bar-text-color: var(--text-muted); */
-	/* --status-bar-position: fixed; */
+	--status-bar-position: inline;
 	/* --status-bar-radius: var(--radius-m) 0 0 0; */
 	/* --status-bar-scroll-padding: "??" ; NOTE: not showing in Obsidian app. */
 
+	/* TODO: Continue changing variables from here */
 	/* Vault Profile */
 	/* --vault-profile-display: flex; */
 	/* --vault-profile-actions-display: flex; */
@@ -958,7 +1472,7 @@ body {
 	/* --direction: 1; */
 	/* --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df); */
 	/* --focus-ring-outline: 2px solid var(--focus-ring-color); */
-	/* --highlight-mix-blend-mode: lighten; */
+	--highlight-mix-blend-mode: normal;
 	/* --loading-icon-delay: 400ms; */
 	/* --spreadHorizontalWrapped-margin-LR: -3.5px; */
 	/* --viewer-container-height: 0;	 */
@@ -981,13 +1495,65 @@ body {
 	/* ──────────────────────────────────────────────────────────────────────── */
 }
 
+.theme-dark {
+	/* --font-ui-smaller: */
+
+	--text-normal: var(--godot-font-colour);
+	--text-muted: var(--godot-font-colour);
+	--text-faint: rgba(var(--godot-font-colour-disabled-rgb), var(--godot-font-colour-disabled-alpha));
+	--text-error: var(--godot-error-colour);
+	--text-warning: var(--godot-warning-colour);
+	--text-success: var(--godot-success-colour);
+
+	--border-width: var(--godot-width-border-focus);
+	/* ──────────────────────────────────────────────────────────────────────── */
+
+
+	/* Main Title */
+	/* --inline-title-color: var(--text-accent); */
+
+
+	/* --input-hover-border-color: var(--text-accent); */
+
+	/* Table */
+	/* --table-border-color: var(--color-accent); */
+
+	/* Canvas */
+	/* TODO: Change. Not happy with colour. */
+	--canvas-dot-pattern: var(--background-secondary-alt);
+}
+
+/* Icon change for "Open Snippets Folder" button in settings */
+/* ──── Open Sippets Folder ─────────────────────────────────────────────── */
+.clickable-icon[aria-label="Open snippets folder"] {
+	svg {
+		display: none;
+	}
+}
+
+.clickable-icon[aria-label="Open snippets folder"]::before {
+	/* To Webkit or not is the question?
+	or do I just use both? */
+	content: "";
+	/* TODO: experiment with other Godot icons to see if stroke-width affects them. */
+	stroke-width: var(--icon-stroke); /* Might not matter for certain Godot icons. */
+	display: inline-block;
+	width: var(--icon-size);
+	height: var(--icon-size);
+	mask: var(--godot-folder-icon) no-repeat center;
+	mask-size: contain;
+	background-color: var(--color-accent);
+}
+/* ──────────────────────────────────────────────────────────────────────── */
+
+
 /*
 NOTE: Default values for Obsidian Publish sites can be found when creating a new site.
 Remove ".published-container" if you are not planning on using theme in Obsidian Publish.
 */
-.published-container {
+/* .published-container { */
 	/* Site Components */
-	--component-title-color: '??';
+	/* --component-title-color: '??'; */
 	/* --component-title-font: '??'; */
 	/* --component-title-size: '??'; */
 	/* --component-title-style: '??'; */
@@ -1068,4 +1634,4 @@ Remove ".published-container" if you are not planning on using theme in Obsidian
 	/* --sidebar-right-background: '??'; */
 	/* --sidebar-right-border-width: '??'; */
 	/* --sidebar-right-border-color: '??'; */
-}
+/* } */
