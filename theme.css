@@ -38,6 +38,24 @@ body {
 	--godot-background-secondary: #21262e;
 	--godot-background-secondary-alt: #252b34;
 	
+	/* Extended Colours */
+	--godot-color-red-rgb: 256, 120, 107;
+	--godot-color-red: #ff786b;
+	--godot-color-orange-rgb: 255, 178, 115;
+	--godot-color-orange: #ffb373;
+	--godot-color-yellow-rgb: 255, 222, 102;
+	--godot-color-yellow: #ffde66;
+	--godot-color-green-rgb: 115, 242, 128;
+	--godot-color-green: #73f280;
+	--godot-color-cyan-rgb: 66, 255, 194;
+	--godot-color-cyan: #42ffc2;
+	--godot-color-blue-rgb: 20, 125, 250;
+	--godot-color-blue: #027aff;
+	--godot-color-purple-rgb: 163, 163, 245;
+	--godot-color-purple: #a3a3f5;
+	--godot-color-pink-rgb: 255, 140, 204;
+	--godot-color-pink: #ff8ccc;
+	
 	/* Font */
 	--godot-font-colour: #cdcfd2;
 	--godot-font-colour-rgb: 205, 207, 210;
