@@ -38,6 +38,8 @@ body {
 	--godot-background-secondary: #21262e;
 	--godot-background-secondary-alt: #252b34;
 	
+
+	
 	/* Font */
 	--godot-font-colour: #cdcfd2;
 	--godot-font-colour-rgb: 205, 207, 210;
@@ -406,25 +408,6 @@ body {
 	/* --accent-s: '??'; */
 	/* --accent-l: '??'; */
 	
-	/* TODO: Change the Base Colours to Godot versions of the same colour names */
-	/* Extended Colours */
-	/* --color-red-rgb: 251, 70, 76; */
-	/* --color-red: #fb464c; */
-	/* --color-orange-rgb: 233, 151, 63; */
-	/* --color-orange: #e9973f; */
-	/* --color-yellow-rgb: 224, 222, 113; */
-	/* --color-yellow: #e0de71; */
-	/* --color-green-rgb: 68, 207, 110; */
-	/* --color-green: #44cf6e; */
-	/* --color-cyan-rgb: 83, 223, 221; */
-	/* --color-cyan: #53dfdd; */
-	/* --color-blue-rgb: 2, 122, 255; */
-	/* --color-blue: #027aff; */
-	/* --color-purple-rgb: 168, 130, 255; */
-	/* --color-purple: #a882ff; */
-	/* --color-pink-rgb: 250, 153, 205; */
-	/* --color-pink: #fa99cd; */
-	
 	/* WARNING: Best not to change black and white colours. */
 	/* Black and White */
 	/* --mono-rgb-0: 0, 0, 0; */
@@ -439,7 +422,6 @@ body {
 	--background-modifier-active-hover: hsl(var(--accent-h) var(--accent-s) var(--accent-l) / 0.2);
 	--background-modifier-box-shadow: unset; /* NOTE: Not in Obsidian docs. */
 	/* --background-modifier-cover: rgba(10, 10, 10, 0.4); NOTE: Not in Obsidian docs. Has less specificity and will not change easily without "!important". */
-	/* TODO: Seperate out this variable as it has too much control. Changes UI in editor and within notes. Will want separate. */
 	--background-modifier-border: hsl(var(--accent-h) var(--accent-s) var(--accent-l) / 0.3);
 	--background-modifier-border-hover: hsl(var(--accent-h) var(--accent-s) var(--accent-l) / 0.3);
 	--background-modifier-border-focus: var(--color-accent);
@@ -609,7 +591,6 @@ body {
 	/* I think the original image has some transparency, which means it blends better. */
 	/* Could try using "::before" or "::after" to add my own icon. */
 	.dropdown { /* Override up-down arrows icon for dropdowns */
-		/* TODO: Change the icon to use an up-down arrow icon. */
 		background-image: var(--godot-code-fold-down-arrow-icon);
 		/* background-color: rgba(0, 0, 0, 0.09); */
 		/* background-blend-mode: darken; */
@@ -634,7 +615,7 @@ body {
 	/* --modal-max-height: var(--modal-max-height); */
 	/* --modal-max-width-narrow: 800px; */
 	/* --modal-border-width: var(--border-width); */
-	/* --modal-border-color: var(--background-primary-alt); TODO: Think about this one some more */
+	/* --modal-border-color: var(--background-primary-alt); */
 	--modal-radius: var(--radius-m);
 	/* --modal-community-sidebar-width: 280px; NOTE: Only for the community themes and plugins modal panel */
 
@@ -949,7 +930,6 @@ body {
 	/* --callout-warning: var(--color-orange-rgb); */
 	/* --callout-quote: 158, 158, 158; */
 
-	/* TODO: Replace the code colours with the original Obsidian colour variables after changing the values of the Obsidian colour variables */
 	/* Code */
 	/* --code-white-space: pre-wrap; */
 	/* --code-border-width: 0; */
@@ -971,7 +951,6 @@ body {
 	--code-value: #a1ffe0;
 
 	
-	/* TODO: Think about the style of this a bit more */
 	/* Embed */
 	--embed-max-height: 500px;
 	/* --embed-canvas-max-height: 400px; */
@@ -1097,7 +1076,6 @@ body {
 	/* --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3); */
 
 	/* .external-link { */
-		/* TODO: Replace "background-image" with the external link icon in Godot. */
 		/* background-image: var(--godot-folder-browse-icon); */
 	/* } */
 
@@ -1199,7 +1177,6 @@ body {
 	--table-add-button-border-width: 2px;
 	/* --table-add-button-border-color: var(--background-modifier-border); */
 
-	/* TODO: Make new design for tables that fits the Godot Theme better. */
 	/* Leaves the top border colour and width for the header row */
 	/* .cm-html-embed thead tr > th,
 	.markdown-rendered thead tr > th {
@@ -1233,7 +1210,6 @@ body {
 
 
 	/* ──── Window ──────────────────────────────────────────────────────────── */
-	/* TODO: Remove Divider as Godot uses blocks of solid colour to separate windows from eachother */
 	/* Divider */
 	/* --divider-color: var(--background-modifier-border); */
 	/* --divider-color-hover: var(--interactive-accent); */
@@ -1273,7 +1249,6 @@ body {
 	/* --sidebar-left-toggle-inner-width-open: 24%; NOTE: Not in Obsidian docs. */
 	/* --sidebar-right-toggle-inner-width-open: 24%; NOTE: Not in Obsidian docs. */
 
-	/* TODO: Change the pencil icon in the Status Bar with a Godot equivalent */
 	/* Status Bar */
 	/* --status-bar-background: var(--background-secondary); */
 	/* --status-bar-border-color: var(--divider-color); */
@@ -1284,7 +1259,6 @@ body {
 	/* --status-bar-radius: var(--radius-m) 0 0 0; */
 	/* --status-bar-scroll-padding: "??" ; NOTE: not showing in Obsidian app. */
 
-	/* TODO: Continue changing variables from here */
 	/* Vault Profile */
 	/* --vault-profile-display: flex; */
 	/* --vault-profile-actions-display: flex; */
@@ -1496,6 +1470,42 @@ body {
 }
 
 .theme-dark {
+	/* Godot Extended Colours (Dark) */
+	--godot-color-red-rgb: 256, 120, 107;
+	--godot-color-red: #ff786b;
+	--godot-color-orange-rgb: 255, 178, 115;
+	--godot-color-orange: #ffb373;
+	--godot-color-yellow-rgb: 255, 222, 102;
+	--godot-color-yellow: #ffde66;
+	--godot-color-green-rgb: 115, 242, 128;
+	--godot-color-green: #73f280;
+	--godot-color-cyan-rgb: 66, 255, 194;
+	--godot-color-cyan: #42ffc2;
+	--godot-color-blue-rgb: 20, 125, 250;
+	--godot-color-blue: #027aff;
+	--godot-color-purple-rgb: 163, 163, 245;
+	--godot-color-purple: #a3a3f5;
+	--godot-color-pink-rgb: 255, 140, 204;
+	--godot-color-pink: #ff8ccc;
+
+	/* Extended Colours Overrides */
+	--color-red-rgb: var(--godot-color-red-rgb);
+	--color-red: var(--godot-color-red);
+	--color-orange-rgb: var(--godot-color-orange-rgb);
+	--color-orange: var(--godot-color-orange);
+	--color-yellow-rgb: var(--godot-color-yellow-rgb);
+	--color-yellow: var(--godot-color-yellow);
+	--color-green-rgb: var(--godot-color-green-rgb);
+	--color-green: var(--godot-color-green);
+	--color-cyan-rgb: var(--godot-color-cyan-rgb);
+	--color-cyan: var(--godot-color-cyan);
+	--color-blue-rgb: var(--godot-color-blue-rgb);
+	--color-blue: var(--godot-color-blue);
+	--color-purple-rgb: var(--godot-color-purple-rgb);
+	--color-purple: var(--godot-color-purple);
+	--color-pink-rgb: var(--godot-color-pink-rgb);
+	--color-pink: var(--godot-color-pink);
+
 	/* --font-ui-smaller: */
 
 	--text-normal: var(--godot-font-colour);
@@ -1519,7 +1529,6 @@ body {
 	/* --table-border-color: var(--color-accent); */
 
 	/* Canvas */
-	/* TODO: Change. Not happy with colour. */
 	--canvas-dot-pattern: var(--background-secondary-alt);
 }
 
@@ -1535,7 +1544,6 @@ body {
 	/* To Webkit or not is the question?
 	or do I just use both? */
 	content: "";
-	/* TODO: experiment with other Godot icons to see if stroke-width affects them. */
 	stroke-width: var(--icon-stroke); /* Might not matter for certain Godot icons. */
 	display: inline-block;
 	width: var(--icon-size);
