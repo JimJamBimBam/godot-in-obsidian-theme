@@ -324,12 +324,7 @@ body {
 
 	/* Misc */
 	/* ──────────────────────────────────────────────────────────────────────── */
-	--godot-error-colour: #ff786b;
-	--godot-error-colour-rgb: 256, 120, 107;
-	--godot-success-colour: #73f280;
-	--godot-success-colour-rgb: 115, 242, 128;
-	--godot-warning-colour: #ffde66;
-	--godot-warning-colour-rgb: 255, 222, 102;
+	
 
 	--godot-highlight-symbol-colour: #abc9ff;
 	--godot-highlight-symbol-colour-rgb: 171, 201, 255;
@@ -1470,6 +1465,7 @@ body {
 }
 
 .theme-dark {
+	/* ──── Godot Colours ───────────────────────────────────────────────────── */
 	/* Godot Extended Colours (Dark) */
 	--godot-color-red-rgb: 256, 120, 107;
 	--godot-color-red: #ff786b;
@@ -1487,6 +1483,15 @@ body {
 	--godot-color-purple: #a3a3f5;
 	--godot-color-pink-rgb: 255, 140, 204;
 	--godot-color-pink: #ff8ccc;
+
+	/* Error/Success/Warning Colours */
+	--godot-error-colour-rgb: var(--godot-color-red-rgb);
+	--godot-error-colour: var(--godot-color-red);
+	--godot-success-colour-rgb: var(--godot-color-green-rgb);
+	--godot-success-colour: var(--godot-color-green);
+	--godot-warning-colour-rgb: var(--godot-color-yellow-rgb);
+	--godot-warning-colour: var(--godot-color-yellow);
+	/* ──────────────────────────────────────────────────────────────────────── */
 
 	/* Extended Colours Overrides */
 	--color-red-rgb: var(--godot-color-red-rgb);
