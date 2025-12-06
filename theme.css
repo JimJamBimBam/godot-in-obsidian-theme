@@ -1511,8 +1511,6 @@ body {
 	--color-pink-rgb: var(--godot-color-pink-rgb);
 	--color-pink: var(--godot-color-pink);
 
-	/* --font-ui-smaller: */
-
 	--text-normal: var(--godot-font-colour);
 	--text-muted: var(--godot-font-colour);
 	--text-faint: rgba(var(--godot-font-colour-disabled-rgb), var(--godot-font-colour-disabled-alpha));
@@ -1521,17 +1519,6 @@ body {
 	--text-success: var(--godot-success-colour);
 
 	--border-width: var(--godot-width-border-focus);
-	/* ──────────────────────────────────────────────────────────────────────── */
-
-
-	/* Main Title */
-	/* --inline-title-color: var(--text-accent); */
-
-
-	/* --input-hover-border-color: var(--text-accent); */
-
-	/* Table */
-	/* --table-border-color: var(--color-accent); */
 
 	/* Canvas */
 	--canvas-dot-pattern: var(--background-secondary-alt);
