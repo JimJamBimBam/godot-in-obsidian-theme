@@ -17,7 +17,7 @@
 	/* ──────────────────────────────────────────────────────────────────────── */
 
 	/* Base colour that darker and lighter colours are derived from. */
-	--godot-base-colour: #363d4a;
+	--godot-base-color: #363d4a;
 }
 
 
@@ -41,104 +41,104 @@ body {
 
 	
 	/* Font */
-	--godot-font-colour: #cdcfd2;
-	--godot-font-colour-rgb: 205, 207, 210;
-	--godot-font-colour-alpha: 1.0;
-	--godot-font-colour-disabled: #ffffff;
-	--godot-font-colour-disabled-rgb: 255, 255, 255;
-	--godot-font-colour-disabled-alpha: 0.349;
-	--godot-font-colour-focus: #e6e7e8;
-	--godot-font-colour-focus-rgb: 230, 231, 232;
-	--godot-font-colour-focus-alpha: 1.0;
-	--godot-font-colour-hover: #e6e7e8;
-	--godot-font-colour-hover-rgb: 255, 255, 255;
-	--godot-font-colour-hover-alpha: 1.0;
-	--godot-font-colour-hover-pressed: #8fc6f5;
-	--godot-font-colour-hover-pressed-rgb: 143, 198, 245;
-	--godot-font-colour-hover-pressed-alpha: 1.0;
-	--godot-font-colour-placeholder: #ffffff80;
-	--godot-font-colour-placeholder-rgb: 255, 255, 255;
-	--godot-font-colour-placeholder-alpha: 0.502;
-	--godot-font-colour-pressed: #70bafa; /* Used by accent. Should use accent colour in Obsidian settings. */
-	--godot-font-colour-pressed-rgb: 112, 186, 250;
-	--godot-font-colour-pressed-alpha: 1.0;
-	--godot-font-colour-readonly: #ffffff;
-	--godot-font-colour-readonly-rgb: 255, 255, 255;
-	--godot-font-colour-readonly-alpha: 0.651;
+	--godot-font-color: #cdcfd2;
+	--godot-font-color-rgb: 205, 207, 210;
+	--godot-font-color-alpha: 1.0;
+	--godot-font-color-disabled: #ffffff;
+	--godot-font-color-disabled-rgb: 255, 255, 255;
+	--godot-font-color-disabled-alpha: 0.349;
+	--godot-font-color-focus: #e6e7e8;
+	--godot-font-color-focus-rgb: 230, 231, 232;
+	--godot-font-color-focus-alpha: 1.0;
+	--godot-font-color-hover: #e6e7e8;
+	--godot-font-color-hover-rgb: 255, 255, 255;
+	--godot-font-color-hover-alpha: 1.0;
+	--godot-font-color-hover-pressed: #8fc6f5;
+	--godot-font-color-hover-pressed-rgb: 143, 198, 245;
+	--godot-font-color-hover-pressed-alpha: 1.0;
+	--godot-font-color-placeholder: #ffffff80;
+	--godot-font-color-placeholder-rgb: 255, 255, 255;
+	--godot-font-color-placeholder-alpha: 0.502;
+	--godot-font-color-pressed: #70bafa; /* Used by accent. Should use accent colour in Obsidian settings. */
+	--godot-font-color-pressed-rgb: 112, 186, 250;
+	--godot-font-color-pressed-alpha: 1.0;
+	--godot-font-color-readonly: #ffffff;
+	--godot-font-color-readonly-rgb: 255, 255, 255;
+	--godot-font-color-readonly-alpha: 0.651;
 
 	/* Icons */
-	--godot-icon-colour-disabled: #ffffff;
-	--godot-icon-colour-disabled-rgb: 255, 255, 255;
-	--godot-icon-colour-disabled-alpha: 0.4;
-	--godot-icon-colour-focus: #ffffff; /* Obsidian doesn't support HDR values (greater than 1.0 in r, g, or b). Limit to max value. */
-	--godot-icon-colour-focus-rgb: 255, 255, 255;
-	--godot-icon-colour-focus-alpha: 1.0;
-	--godot-icon-colour-hover: #ffffff;
-	--godot-icon-colour-hover-rgb: 255, 255, 255;
-	--godot-icon-colour-hover-alpha: 1.0;
-	--godot-icon-colour-normal: #ffffff;
-	--godot-icon-colour-normal-rgb: 255, 255, 255;
-	--godot-icon-colour-normal-alpha: 1.0;
-	--godot-icon-colour-pressed: #81d7ff;
-	--godot-icon-colour-pressed-rgb: 129, 215, 255;
-	--godot-icon-colour-pressed-alpha: 1.0;
-	--godot-icon-colour-saturation: #ffffff;
-	--godot-icon-colour-saturation-rgb: 255, 255, 255;
-	--godot-icon-colour-saturation-alpha: 1.0;
+	--godot-icon-color-disabled: #ffffff;
+	--godot-icon-color-disabled-rgb: 255, 255, 255;
+	--godot-icon-color-disabled-alpha: 0.4;
+	--godot-icon-color-focus: #ffffff; /* Obsidian doesn't support HDR values (greater than 1.0 in r, g, or b). Limit to max value. */
+	--godot-icon-color-focus-rgb: 255, 255, 255;
+	--godot-icon-color-focus-alpha: 1.0;
+	--godot-icon-color-hover: #ffffff;
+	--godot-icon-color-hover-rgb: 255, 255, 255;
+	--godot-icon-color-hover-alpha: 1.0;
+	--godot-icon-color-normal: #ffffff;
+	--godot-icon-color-normal-rgb: 255, 255, 255;
+	--godot-icon-color-normal-alpha: 1.0;
+	--godot-icon-color-pressed: #81d7ff;
+	--godot-icon-color-pressed-rgb: 129, 215, 255;
+	--godot-icon-color-pressed-alpha: 1.0;
+	--godot-icon-color-saturation: #ffffff;
+	--godot-icon-color-saturation-rgb: 255, 255, 255;
+	--godot-icon-color-saturation-alpha: 1.0;
 	
 	/* Check Box */
-	--godot-checkbox-font-colour: var(--godot-font-colour);
-	--godot-checkbox-font-colour-disabled: var(--godot-font-colour-disabled);
-	--godot-checkbox-font-colour-focus: var(--godot-font-colour-focus);
-	--godot-checkbox-font-colour-hover: var(--godot-font-colour-hover);
-	--godot-checkbox-font-colour-hover-pressed: var(--godot-font-colour-hover-pressed);
-	--godot-checkbox-font-colour-pressed: var(--godot-font-colour-pressed);
-	--godot-checkbox-icon-colour-disabled: var(--godot-icon-colour-disabled);
-	--godot-checkbox-icon-colour-focus: var(--godot-icon-colour-focus);
-	--godot-checkbox-icon-colour-hover: var(--godot-icon-colour-hover);
-	--godot-checkbox-icon-colour-normal: var(--godot-icon-colour-normal);
-	--godot-checkbox-icon-colour-pressed: var(--godot-icon-colour-pressed);
+	--godot-checkbox-font-color: var(--godot-font-color);
+	--godot-checkbox-font-color-disabled: var(--godot-font-color-disabled);
+	--godot-checkbox-font-color-focus: var(--godot-font-color-focus);
+	--godot-checkbox-font-color-hover: var(--godot-font-color-hover);
+	--godot-checkbox-font-color-hover-pressed: var(--godot-font-color-hover-pressed);
+	--godot-checkbox-font-color-pressed: var(--godot-font-color-pressed);
+	--godot-checkbox-icon-color-disabled: var(--godot-icon-color-disabled);
+	--godot-checkbox-icon-color-focus: var(--godot-icon-color-focus);
+	--godot-checkbox-icon-color-hover: var(--godot-icon-color-hover);
+	--godot-checkbox-icon-color-normal: var(--godot-icon-color-normal);
+	--godot-checkbox-icon-color-pressed: var(--godot-icon-color-pressed);
 
 	/* Tree */
-	--godot-tree-children-hl-line-colour: rgba(var(--godot-font-colour-disabled-rgb), var(--godot-font-colour-disabled-alpha));
-	--godot-tree-font-colour: var(--godot-font-colour);
-	--godot-tree-font-colour-disabled: var(--godot-font-colour-disabled);
-	--godot-tree-font-colour-hovered: rgba(var(--godot-font-colour-hover-rgb), var(--godot-font-colour-hover-alpha));
-	--godot-tree-font-colour-hovered-dim: var(--godot-font-colour);
-	--godot-tree-font-colour-hovered-selected: rgba(var(--godot-font-colour-hover-pressed-rgb), var(--godot-font-colour-hover-pressed-alpha));
-	--godot-tree-font-colour-selected: rgba(var(--godot-font-colour-focus-rgb), var(--godot-font-colour-focus-alpha));
-	--godot-tree-guide-colour: rgba(255 255 255 / 0.05);
-	--godot-tree-parent-hl-line-colour: rgba(255 255 255 / 0.549);
-	--godot-tree-relationship-line-colour: rgba(255 255 255 / 0.1);
+	--godot-tree-children-hl-line-color: rgba(var(--godot-font-color-disabled-rgb), var(--godot-font-color-disabled-alpha));
+	--godot-tree-font-color: var(--godot-font-color);
+	--godot-tree-font-color-disabled: var(--godot-font-color-disabled);
+	--godot-tree-font-color-hovered: rgba(var(--godot-font-color-hover-rgb), var(--godot-font-color-hover-alpha));
+	--godot-tree-font-color-hovered-dim: var(--godot-font-color);
+	--godot-tree-font-color-hovered-selected: rgba(var(--godot-font-color-hover-pressed-rgb), var(--godot-font-color-hover-pressed-alpha));
+	--godot-tree-font-color-selected: rgba(var(--godot-font-color-focus-rgb), var(--godot-font-color-focus-alpha));
+	--godot-tree-guide-color: rgba(255 255 255 / 0.05);
+	--godot-tree-parent-hl-line-color: rgba(255 255 255 / 0.549);
+	--godot-tree-relationship-line-color: rgba(255 255 255 / 0.1);
 	
 	/* Popup (Modal) */
-	--godot-popup-font-colour: rgba(var(--godot-font-colour), var(--godot-font-colour-alpha));
-	--godot-popup-font-colour-disabled: rgba(var(--godot-font-colour-disabled-rgb), var(--godot-font-colour-disabled-alpha));
-	--godot-popup-font-colour-hover: rgba(var(--godot-font-colour-hover), var(--godot-font-colour-hover-alpha));
-	--godot-popup-font-colour-separator: rgba(var(--godot-font-colour-disabled-rgb), var(--godot-font-colour-disabled-alpha));
+	--godot-popup-font-color: rgba(var(--godot-font-color), var(--godot-font-color-alpha));
+	--godot-popup-font-color-disabled: rgba(var(--godot-font-color-disabled-rgb), var(--godot-font-color-disabled-alpha));
+	--godot-popup-font-color-hover: rgba(var(--godot-font-color-hover), var(--godot-font-color-hover-alpha));
+	--godot-popup-font-color-separator: rgba(var(--godot-font-color-disabled-rgb), var(--godot-font-color-disabled-alpha));
 
 	/* Slider */
-	--godot-slider-colour: #15181e;
+	--godot-slider-color: #15181e;
 	--godot-slider-rgb: 21, 24, 30;
 	--godot-slider-alpha: 1.0;
-	--godot-slider-grabber-colour: #ffffff;
+	--godot-slider-grabber-color: #ffffff;
 	--godot-slider-grabber-rgb: 255, 255, 255;
 	--godot-slider-grabber-alpha: 1.0;
-	--godot-slider-grabber-area-colour: #727780;
+	--godot-slider-grabber-area-color: #727780;
 	--godot-slider-grabber-area-rgb: 113, 118, 127;
 	--godot-slider-grabber-area-alpha: 1.0;
-	--godot-slider-grabber-highlight-colour: #727780;
+	--godot-slider-grabber-highlight-color: #727780;
 	--godot-slider-grabber-highlight-rgb: 113, 118, 127;
 	--godot-slider-grabber-highlight-alpha: 1.0;
 
 	/* ──── Tab ─────────────────────────────────────────────────────────────── */
 	/* Colours */
-	--godot-tab-drop-mark-colour: var(--color-accent);
+	--godot-tab-drop-mark-color: var(--color-accent);
 	--godot-tab-drop-mark-hsl: var(--accent-h), var(--accent-s), var(--accent-l); 
-	--godot-tab-font-hovered-colour: rgba(var(--godot-font-colour), var(--godot-font-colour-alpha));
-	--godot-tab-font-outline-colour: #00000000;
-	--godot-tab-font-selected-colour: var(--godot-font-colour);
-	--godot-tab-font-unselected-colour: #ffffff59;
+	--godot-tab-font-hovered-color: rgba(var(--godot-font-color), var(--godot-font-color-alpha));
+	--godot-tab-font-outline-color: #00000000;
+	--godot-tab-font-selected-color: var(--godot-font-color);
+	--godot-tab-font-unselected-color: #ffffff59;
 	/* Constants */
 	--godot-tab-h-seperation: 8px;
 	--godot-tab-icon-max-width: 0;
@@ -154,170 +154,170 @@ body {
 
 	/* Styles */
 	/* Tab Panel */
-	--godot-tab-panel-bg-colour: var(--godot-background-primary);
+	--godot-tab-panel-bg-color: var(--godot-background-primary);
 	--godot-tab-panel-skew-x: 0;
 	--godot-tab-panel-skew-y: 0;
 	--godot-tab-panel-skew: skew(var(--godot-tab-panel-skew-x) var(--godot-tab-panel-skew-y));
 	--godot-tab-panel-border-width: 0;
-	--godot-tab-panel-border-colour: #15181eff;
+	--godot-tab-panel-border-color: #15181eff;
 	--godot-tab-panel-border-radius: 0 0 6px 6px;
 	--godot-tab-panel-content-margin: 12px 8px 8px 8px;
-	--godot-tab-panel-shadow-colour: #00000099;
+	--godot-tab-panel-shadow-color: #00000099;
 	--godot-tab-panel-shadow-size: 0;
 	--godot-tab-panel-shadow-offset-x: 0;
 	--godot-tab-panel-shadow-offset-y: 0;
-	--godot-tab-panel-shadow: var(--godot-tab-panel-shadow-offset-x) var(--godot-tab-panel-shadow-offset-y) 0 var(--godot-tab-panel-shadow-size) var(--godot-tab-panel-shadow-colour);
+	--godot-tab-panel-shadow: var(--godot-tab-panel-shadow-offset-x) var(--godot-tab-panel-shadow-offset-y) 0 var(--godot-tab-panel-shadow-size) var(--godot-tab-panel-shadow-color);
 	/* Disabled */
-	--godot-tab-disabled-bg-colour: #303743ff;
+	--godot-tab-disabled-bg-color: #303743ff;
 	--godot-tab-disabled-skew-x: 0;
 	--godot-tab-disabled-skew-y: 0;
 	--godot-tab-disabled-skew: skew(var(--godot-tab-disabled-skew-x), var(--godot-tab-disabled-skew-y));
 	--godot-tab-disabled-border-width: 0;
-	--godot-tab-disabled-border-colour: #303743ff;
+	--godot-tab-disabled-border-color: #303743ff;
 	--godot-tab-disabled-corner-radius: 6px 6px 0 0;
 	--godot-tab-disabled-content-margin: 10px 22px 10px 22px;
-	--godot-tab-disabled-shadow-colour: #00000099;
+	--godot-tab-disabled-shadow-color: #00000099;
 	--godot-tab-disabled-shadow-size: 0;
 	--godot-tab-disabled-shadow-offset-x: 0;
 	--godot-tab-disabled-shadow-offset-y: 0;
-	--godot-tab-disabled-shadow: var(--godot-tab-disabled-shadow-offset-x) var(--godot-tab-disabled-shadow-offset-y) 0 var(--godot-tab-disabled-shadow-size) var(--godot-tab-disabled-shadow-colour);
+	--godot-tab-disabled-shadow: var(--godot-tab-disabled-shadow-offset-x) var(--godot-tab-disabled-shadow-offset-y) 0 var(--godot-tab-disabled-shadow-size) var(--godot-tab-disabled-shadow-color);
 	/* Tab Focus */
-	--godot-tab-focus-bg-colour: #252b3400;
+	--godot-tab-focus-bg-color: #252b3400;
 	--godot-tab-focus-skew-x: 0;
 	--godot-tab-focus-skew-y: 0;
 	--godot-tab-focus-skew: skew(var(--godot-tab-focus-skew-x), var(--godot-tab-focus-skew-y));
 	--godot-tab-focus-border-width: 4px;
-	--godot-tab-focus-border-colour: var(--color-accent);
+	--godot-tab-focus-border-color: var(--color-accent);
 	--godot-tab-focus-corner-radius: 6px;
 	--godot-tab-focus-expand-margin: 0;
-	--godot-tab-focus-shadow-colour: #00000099;
+	--godot-tab-focus-shadow-color: #00000099;
 	--godot-tab-focus-shadow-size: 0;
 	--godot-tab-focus-shadow-offset-x: 0;
 	--godot-tab-focus-shadow-offset-y: 0;
-	--godot-tab-focus-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-colour);
+	--godot-tab-focus-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-color);
 	--godot-tab-focus-content-margins: 10px 12px 10px 12px;
 	/* Tab Hovered */
-	--godot-tab-hovered-bg-colour: #2c323dff;
+	--godot-tab-hovered-bg-color: #2c323dff;
 	--godot-tab-hovered-skew-x: 0;
 	--godot-tab-hovered-skew-y: 0;
 	--godot-tab-hovered-skew: skew(var(--godot-tab-hovered-skew-x), var(--godot-tab-hovered-skew-y));
 	--godot-tab-hovered-border-width: 0;
-	--godot-tab-hovered-border-colour: #1d2229ff;
+	--godot-tab-hovered-border-color: #1d2229ff;
 	--godot-tab-hovered-corner-radius: 0;
 	--godot-tab-hovered-expand-margin: 0;
-	--godot-tab-hovered-shadow-colour: #00000099;
+	--godot-tab-hovered-shadow-color: #00000099;
 	--godot-tab-hovered-shadow-size: 0;
 	--godot-tab-hovered-shadow-offset-x: 0;
 	--godot-tab-hovered-shadow-offset-y: 0;
-	--godot-tab-hovered-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-colour);
+	--godot-tab-hovered-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-color);
 	--godot-tab-hovered-content-margins: 10px 22px 10px 22px;
 	/* Tab Selected */
-	--godot-tab-selected-bg-colour: var(--godot-background-primary);
+	--godot-tab-selected-bg-color: var(--godot-background-primary);
 	--godot-tab-selected-skew-x: 0;
 	--godot-tab-selected-skew-y: 0;
 	--godot-tab-selected-skew: skew(var(--godot-tab-selected-skew-x), var(--godot-tab-selected-skew-y));
 	--godot-tab-selected-border-width: 4px 0 0 0;
-	--godot-tab-selected-border-colour: var(--color-accent);
+	--godot-tab-selected-border-color: var(--color-accent);
 	--godot-tab-selected-corner-radius: 0;
 	--godot-tab-selected-expand-margin: 0;
-	--godot-tab-selected-shadow-colour: #00000099;
+	--godot-tab-selected-shadow-color: #00000099;
 	--godot-tab-selected-shadow-size: 0;
 	--godot-tab-selected-shadow-offset-x: 0;
 	--godot-tab-selected-shadow-offset-y: 0;
-	--godot-tab-selected-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-colour);
+	--godot-tab-selected-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-color);
 	--godot-tab-selected-content-margins: 10px 22px 10px 22px;
 	/* Tab Unselected */
-	--godot-tab-unselected-bg-colour: var(--godot-background-secondary-alt);
+	--godot-tab-unselected-bg-color: var(--godot-background-secondary-alt);
 	--godot-tab-unselected-skew-x: 0;
 	--godot-tab-unselected-skew-y: 0;
 	--godot-tab-unselected-skew: skew(var(--godot-tab-unselected-skew-x), var(--godot-tab-unselected-skew-y));
 	--godot-tab-unselected-border-width: 0;
-	--godot-tab-unselected-border-colour: transparent;
+	--godot-tab-unselected-border-color: transparent;
 	--godot-tab-unselected-corner-radius: 0;
 	--godot-tab-unselected-expand-margin: 0;
-	--godot-tab-unselected-shadow-colour: #00000099;
+	--godot-tab-unselected-shadow-color: #00000099;
 	--godot-tab-unselected-shadow-size: 0;
 	--godot-tab-unselected-shadow-offset-x: 0;
 	--godot-tab-unselected-shadow-offset-y: 0;
-	--godot-tab-unselected-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-colour);
+	--godot-tab-unselected-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-color);
 	--godot-tab-unselected-content-margins: 10px 22px 10px 22px;
 	/* Tabbar Background */
-	--godot-tab-tabbar-background-bg-colour: var(--godot-background-secondary-alt);
+	--godot-tab-tabbar-background-bg-color: var(--godot-background-secondary-alt);
 	--godot-tab-tabbar-background-skew-x: 0;
 	--godot-tab-tabbar-background-skew-y: 0;
 	--godot-tab-tabbar-background-skew: skew(var(--godot-tab-tabbar-background-skew-x), var(--godot-tab-tabbar-background-skew-y));
 	--godot-tab-tabbar-background-border-width: 0;
-	--godot-tab-tabbar-background-border-colour: transparent;
+	--godot-tab-tabbar-background-border-color: transparent;
 	--godot-tab-tabbar-background-corner-radius: 12 12 0 0;
 	--godot-tab-tabbar-background-expand-margin: 0;
-	--godot-tab-tabbar-background-shadow-colour: #00000099;
+	--godot-tab-tabbar-background-shadow-color: #00000099;
 	--godot-tab-tabbar-background-shadow-size: 0;
 	--godot-tab-tabbar-background-shadow-offset-x: 0;
 	--godot-tab-tabbar-background-shadow-offset-y: 0;
-	--godot-tab-tabbar-background-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-colour);
+	--godot-tab-tabbar-background-shadow: var(--godot-tab-focus-shadow-offset-x) var(--godot-tab-focus-shadow-offset-y) 0 var(--godot-tab-focus-shadow-size) var(--godot-tab-focus-shadow-color);
 	--godot-tab-tabbar-background-content-margins: 0;
 	/* ──────────────────────────────────────────────────────────────────────── */
 	
 	/* ────── Line Edit ─────────────────────────────────────────────────────── */
 	/* Colours */
-	--godot-line-edit-caret-colour: var(--godot-font-colour);
-	--godot-line-edit-clear-button-colour: var(--godot-font-colour);
-	--godot-line-edit-clear-button-pressed-colour: var(--color-accent);
-	--godot-line-edit-font-colour: var(--godot-font-colour);
-	--godot-line-edit-font-outline-colour: transparent;
-	--godot-line-edit-font-placeholder-colour: #ffffff80;
-	--godot-line-edit-font-selected-colour: #ffffffff;
-	--godot-line-edit-font-uneditable-colour: #ffffffa6;
-	--godot-line-edit-selection-colour: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
+	--godot-line-edit-caret-color: var(--godot-font-color);
+	--godot-line-edit-clear-button-color: var(--godot-font-color);
+	--godot-line-edit-clear-button-pressed-color: var(--color-accent);
+	--godot-line-edit-font-color: var(--godot-font-color);
+	--godot-line-edit-font-outline-color: transparent;
+	--godot-line-edit-font-placeholder-color: #ffffff80;
+	--godot-line-edit-font-selected-color: #ffffffff;
+	--godot-line-edit-font-uneditable-color: #ffffffa6;
+	--godot-line-edit-selection-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
 	/* Constants */
 	--godot-line-edit-caret-width: 1px;
 	--godot-line-edit-minimum-character-width: 4px;
 	--godot-line-edit-outline-size: 0;
 	/* Styles */
 	/* Focus */
-	--godot-line-edit-focus-bg-colour: transparent;
+	--godot-line-edit-focus-bg-color: transparent;
 	--godot-line-edit-focus-skew-x: 0;
 	--godot-line-edit-focus-skew-y: 0;
 	--godot-line-edit-focus-skew: skew(var(--godot-line-edit-focus-skew-x), var(--godot-line-edit-focus-skew-y));
 	--godot-line-edit-focus-border-width: 4px;
-	--godot-line-edit-focus-border-colour: var(--color-accent);
+	--godot-line-edit-focus-border-color: var(--color-accent);
 	--godot-line-edit-focus-corner-radius: 6px;
 	--godot-line-edit-focus-expand-margin: 0;
-	--godot-line-edit-focus-shadow-colour: #00000099;
+	--godot-line-edit-focus-shadow-color: #00000099;
 	--godot-line-edit-focus-shadow-size: 0;
 	--godot-line-edit-focus-shadow-offset-x: 0;
 	--godot-line-edit-focus-shadow-offset-y: 0;
-	--godot-line-edit-focus-shadow: var(--godot-line-edit-focus-shadow-offset-x) var(--godot-line-edit-focus-shadow-offset-y) 0 var(--godot-line-edit-focus-shadow-size) var(--godot-line-edit-focus-shadow-colour);
+	--godot-line-edit-focus-shadow: var(--godot-line-edit-focus-shadow-offset-x) var(--godot-line-edit-focus-shadow-offset-y) 0 var(--godot-line-edit-focus-shadow-size) var(--godot-line-edit-focus-shadow-color);
 	--godot-line-edit-focus-content-margin: 10px 12px 10px 12px;
 	/* Normal */
-	--godot-line-edit-normal-bg-colour: var(--godot-background-secondary-alt);
+	--godot-line-edit-normal-bg-color: var(--godot-background-secondary-alt);
 	--godot-line-edit-normal-skew-x: 0;
 	--godot-line-edit-normal-skew-y: 0;
 	--godot-line-edit-normal-skew: skew(var(--godot-line-edit-normal-skew-x), var(--godot-line-edit-normal-skew-y));
 	--godot-line-edit-normal-border-width: 0 0 4px 0;
-	--godot-line-edit-normal-border-colour: #1d2229;
+	--godot-line-edit-normal-border-color: #1d2229;
 	--godot-line-edit-normal-corner-radius: 6px 6px 0 0;
 	--godot-line-edit-normal-expand-margin: 0 0 4px 0;
-	--godot-line-edit-normal-shadow-colour: #00000099;
+	--godot-line-edit-normal-shadow-color: #00000099;
 	--godot-line-edit-normal-shadow-size: 0;
 	--godot-line-edit-normal-shadow-offset-x: 0;
 	--godot-line-edit-normal-shadow-offset-y: 0;
-	--godot-line-edit-normal-shadow: var(--godot-line-edit-focus-shadow-offset-x) var(--godot-line-edit-focus-shadow-offset-y) 0 var(--godot-line-edit-focus-shadow-size) var(--godot-line-edit-focus-shadow-colour);
+	--godot-line-edit-normal-shadow: var(--godot-line-edit-focus-shadow-offset-x) var(--godot-line-edit-focus-shadow-offset-y) 0 var(--godot-line-edit-focus-shadow-size) var(--godot-line-edit-focus-shadow-color);
 	--godot-line-edit-normal-content-margin: 10px 12px 10px 12px;
 	/* Read Only */
-	--godot-line-edit-readonly-bg-colour: #303743ff;
+	--godot-line-edit-readonly-bg-color: #303743ff;
 	--godot-line-edit-readonly-skew-x: 0;
 	--godot-line-edit-readonly-skew-y: 0;
 	--godot-line-edit-readonly-skew: skew(var(--godot-line-edit-readonly-skew-x), var(--godot-line-edit-readonly-skew-y));
 	--godot-line-edit-readonly-border-width: 0 0 4px 0;
-	--godot-line-edit-readonly-border-colour: var(--godot-background-secondary-alt);
+	--godot-line-edit-readonly-border-color: var(--godot-background-secondary-alt);
 	--godot-line-edit-readonly-corner-radius: 6px 6px 0 0;
 	--godot-line-edit-readonly-expand-margin: 0;
-	--godot-line-edit-readonly-shadow-colour: #00000099;
+	--godot-line-edit-readonly-shadow-color: #00000099;
 	--godot-line-edit-readonly-shadow-size: 0;
 	--godot-line-edit-readonly-shadow-offset-x: 0;
 	--godot-line-edit-readonly-shadow-offset-y: 0;
-	--godot-line-edit-readonly-shadow: var(--godot-line-edit-focus-shadow-offset-x) var(--godot-line-edit-focus-shadow-offset-y) 0 var(--godot-line-edit-focus-shadow-size) var(--godot-line-edit-focus-shadow-colour);
+	--godot-line-edit-readonly-shadow: var(--godot-line-edit-focus-shadow-offset-x) var(--godot-line-edit-focus-shadow-offset-y) 0 var(--godot-line-edit-focus-shadow-size) var(--godot-line-edit-focus-shadow-color);
 	--godot-line-edit-readonly-content-margin: 10px 12px 10px 12px;
 	/* ──────────────────────────────────────────────────────────────────────── */
 
@@ -326,40 +326,40 @@ body {
 	/* ──────────────────────────────────────────────────────────────────────── */
 	
 
-	--godot-highlight-symbol-colour: #abc9ff;
-	--godot-highlight-symbol-colour-rgb: 171, 201, 255;
-	--godot-highlight-keyword-colour: ;
-	--godot-highlight-keyword-colour-rgb: ;
-	--godot-highlight-control-flow-keyword-colour: ;
-	--godot-highlight-control-flow-keyword-colour-rgb: ;
-	--godot-highlight-base-type-colour: ;
-	--godot-highlight-base-type-colour-rgb: ;
-	--godot-highlight-engine-type-colour: ;
-	--godot-highlight-engine-type-colour-rgb: ;
-	--godot-highlight-user-type-colour: ;
-	--godot-highlight-user-type-colour-rgb: ;
-	--godot-highlight-comment-colour: ;
-	--godot-highlight-comment-colour-rgb: ;
-	--godot-highlight-doc-comment-colour: ;
-	--godot-highlight-doc-comment-colour-rgb: ;
-	--godot-highlight-string-colour: ;
-	--godot-highlight-string-colour-rgb: ;
-	--godot-highlight-bg-colour: ;
-	--godot-highlight-bg-colour-rgb: ;
-	--godot-highlight-completion-bg-colour: ;
-	--godot-highlight-completion-bg-colour-rgb: ;
-	--godot-highlight-completion-selected-colour: ;
-	--godot-highlight-completion-selected-colour-rgb: ;
-	--godot-highlight-completion-existing-colour: ;
-	--godot-highlight-completion-existing-colour-rgb: ;
-	--godot-highlight-completion-scroll-colour: ;
-	--godot-highlight-completion-scroll-colour-rgb: ;
-	--godot-highlight-completion-scroll-hovered-colour: ;
-	--godot-highlight-completion-scroll-hovered-colour-rgb: ;
-	--godot-highlight-completion-font-colour: ;
-	--godot-highlight-completion-font-colour-rgb: ;
+	--godot-highlight-symbol-color: #abc9ff;
+	--godot-highlight-symbol-color-rgb: 171, 201, 255;
+	--godot-highlight-keyword-color: ;
+	--godot-highlight-keyword-color-rgb: ;
+	--godot-highlight-control-flow-keyword-color: ;
+	--godot-highlight-control-flow-keyword-color-rgb: ;
+	--godot-highlight-base-type-color: ;
+	--godot-highlight-base-type-color-rgb: ;
+	--godot-highlight-engine-type-color: ;
+	--godot-highlight-engine-type-color-rgb: ;
+	--godot-highlight-user-type-color: ;
+	--godot-highlight-user-type-color-rgb: ;
+	--godot-highlight-comment-color: ;
+	--godot-highlight-comment-color-rgb: ;
+	--godot-highlight-doc-comment-color: ;
+	--godot-highlight-doc-comment-color-rgb: ;
+	--godot-highlight-string-color: ;
+	--godot-highlight-string-color-rgb: ;
+	--godot-highlight-bg-color: ;
+	--godot-highlight-bg-color-rgb: ;
+	--godot-highlight-completion-bg-color: ;
+	--godot-highlight-completion-bg-color-rgb: ;
+	--godot-highlight-completion-selected-color: ;
+	--godot-highlight-completion-selected-color-rgb: ;
+	--godot-highlight-completion-existing-color: ;
+	--godot-highlight-completion-existing-color-rgb: ;
+	--godot-highlight-completion-scroll-color: ;
+	--godot-highlight-completion-scroll-color-rgb: ;
+	--godot-highlight-completion-scroll-hovered-color: ;
+	--godot-highlight-completion-scroll-hovered-color-rgb: ;
+	--godot-highlight-completion-font-color: ;
+	--godot-highlight-completion-font-color-rgb: ;
 	
-	--godot-background-tooltip-colour: #0f1217;
+	--godot-background-tooltip-color: #0f1217;
 	--godot-background-tooltip-alpha: 1.0;
 	/* ──────────────────────────────────────────────────────────────────────── */
 
@@ -463,10 +463,10 @@ body {
 	/* Icons */
 	/* --icon-size: var(--icon-m); */
 	/* --icon-stroke: var(--icon-m-stroke-width); */
-	--icon-color: var(--godot-icon-colour-normal);
-	--icon-color-hover: var(--godot-icon-colour-hover);
-	--icon-color-active: var(--godot-icon-colour-pressed);
-	--icon-color-focused: var(--godot-icon-colour-focus);
+	--icon-color: var(--godot-icon-color-normal);
+	--icon-color-hover: var(--godot-icon-color-hover);
+	--icon-color-active: var(--godot-icon-color-pressed);
+	--icon-color-focused: var(--godot-icon-color-focus);
 	--icon-opacity: 0.85;
 	--icon-opacity-hover: 1.0;
 	--icon-opacity-active: 1.0;
@@ -639,10 +639,10 @@ body {
 	/* Navigation */
 	/* --nav-item-size: var(--font-ui-small); */
 	/* --nav-item-color: var(--text-muted); */
-	--nav-item-color-hover: var(--godot-tree-font-colour-hovered);
+	--nav-item-color-hover: var(--godot-tree-font-color-hovered);
 	/* --nav-item-color-active: var(--text-normal); */
-	--nav-item-color-active: var(--godot-tree-font-colour-selected);
-	--nav-item-color-selected: var(--godot-tree-font-colour-selected);
+	--nav-item-color-active: var(--godot-tree-font-color-selected);
+	--nav-item-color-selected: var(--godot-tree-font-color-selected);
 	/* --nav-item-color-highlighted: var(--text-accent); */
 	/* --nav-item-background-hover: var(--background-modifier-hover); */
 	/* --nav-item-background-active: var(--background-modifier-hover); */
@@ -657,7 +657,7 @@ body {
 	/* --nav-item-white-space: pre; */
 	--nav-indentation-guide-width: 0;
 	/* --nav-indentation-guide-color: var(--indentation-guide-color) */
-	--nav-collapse-icon-color: rgba(var(--godot-icon-colour-normal-rgb), 0.45);
+	--nav-collapse-icon-color: rgba(var(--godot-icon-color-normal-rgb), 0.45);
 	/* --nav-collapse-icon-color-collapsed: var(--text-faint); */
 	/* --nav-tag-background: transparent; */
 	/* --nav-tag-radius: var(--radius-s); */
@@ -684,7 +684,7 @@ body {
 		width: 1px;
 		margin-left: -5px;
 		height: calc(100% - ((var(--line-height-tight) * var(--font-text-size)) / 2.0) + 1px);
-		background-color: var(--godot-tree-relationship-line-colour);
+		background-color: var(--godot-tree-relationship-line-color);
 	}
 	
 	.nav-file, .nav-folder {
@@ -699,7 +699,7 @@ body {
 		left: -4px;
 		height: 1px;
 		width: 20px;
-		background-color: var(--godot-tree-relationship-line-colour);
+		background-color: var(--godot-tree-relationship-line-color);
 	}
 
 	.nav-folder::before {
@@ -729,14 +729,14 @@ body {
 
 	/* Slider */
 	--slider-thumb-border-width: 0;
-	/* --slider-thumb-border-color: var(--godot-slider-grabber-colour); */
+	/* --slider-thumb-border-color: var(--godot-slider-grabber-color); */
 	--slider-thumb-height: 16px;
 	--slider-thumb-width: 16px;
 	/* --slider-thumb-y: -6px; */
 	/* --slider-thumb-radius: 50%; */
 	/* --slider-s-thumb-size: 15px; */
 	/* --slider-s-thumb-position: -5px; */
-	--slider-track-background: var(--godot-slider-colour);
+	--slider-track-background: var(--godot-slider-color);
 	--slider-track-height: 4px;
 
 	.slider::-webkit-slider-thumb {
@@ -760,19 +760,19 @@ body {
 	.slider::-webkit-slider-runnable-track {
 		--slider-value: 35%;
 		border-radius: var(--slider-track-height);
-		background: linear-gradient(to right, var(--godot-slider-grabber-area-colour) var(--slider-value), var(--slider-track-background) 0);
+		background: linear-gradient(to right, var(--godot-slider-grabber-area-color) var(--slider-value), var(--slider-track-background) 0);
 		height: var(--slider-track-height);
 	}
 
 	/* Tabs */
-	--tab-background-active: var(--godot-tab-focus-bg-colour);
+	--tab-background-active: var(--godot-tab-focus-bg-color);
 	--tab-text-color: var(--godot-tab-font);
-	--tab-text-color-active: var(--godot-tab-font-selected-colour);
-	--tab-text-color-focused: var(--godot-tab-font-selected-colour);
-	--tab-text-color-focused-active: var(--godot-tab-font-hovered-colour);
-	--tab-text-color-focused-active: var(--godot-tab-font-hovered-colour);
-	--tab-text-color-focused-highlighted: var(--godot-tab-font-hovered-colour);
-	--tab-text-color-focused-active-current: var(--godot-tab-font-selected-colour);
+	--tab-text-color-active: var(--godot-tab-font-selected-color);
+	--tab-text-color-focused: var(--godot-tab-font-selected-color);
+	--tab-text-color-focused-active: var(--godot-tab-font-hovered-color);
+	--tab-text-color-focused-active: var(--godot-tab-font-hovered-color);
+	--tab-text-color-focused-highlighted: var(--godot-tab-font-hovered-color);
+	--tab-text-color-focused-active-current: var(--godot-tab-font-selected-color);
 	--tab-font-size: var(--godot-tab-font-size);
 	/* --tab-font-weight: inherit; */
 	/* --tab-container-background: var(--background-secondary); */
@@ -910,9 +910,9 @@ body {
 	/* --callout-content-padding: 0; */
 	/* --callout-content-background: transparent; */
 	
-	--callout-bug: var(--godot-error-colour-rgb);
-	--callout-default: var(--godot-highlight-symbol-colour-rgb);
-	--callout-error: var(--godot-error-colour-rgb);
+	--callout-bug: var(--godot-error-color-rgb);
+	--callout-default: var(--godot-highlight-symbol-color-rgb);
+	--callout-error: var(--godot-error-color-rgb);
 	/* --callout-example: var(--color-purple-rgb); */
 	/* --callout-fail: var(--color-red-rgb); */
 	/* --callout-important: var(--color-cyan-rgb); */
@@ -934,7 +934,7 @@ body {
 	/* --code-size: var(--font-smaller); */
 	/* --code-background: var(--background-primary-alt); */
 	--code-normal: var(--text-normal);
-	--code-comment: rgba(var(--godot-font-colour-rgb), 0.5);
+	--code-comment: rgba(var(--godot-font-color-rgb), 0.5);
 	--code-function: #66e6ff; /* Use: #57b3ff when the function is being called from a variable. */
 	--code-important: #ffb373;
 	--code-keyword: #ff7085;
@@ -1079,7 +1079,7 @@ body {
 	/* --list-indent-editing: 0.75em; */
 	/* --list-indent-source: 0; */
 	/* --list-spacing: 0.075em; */
-	--list-marker-color: var(--godot-font-colour);
+	--list-marker-color: var(--godot-font-color);
 	/* --list-marker-color-hover: var(--text-muted); */
 	/* --list-marker-color-collapsed: var(--text-accent); */
 	/* --list-bullet-border: none; */
@@ -1189,7 +1189,7 @@ body {
 	/* Tag */
 	/* --tag-size: var(--font-smaller); */
 	/* --tag-color: var(--text-accent); */
-	--tag-color-hover: var(--godot-font-colour-hover);
+	--tag-color-hover: var(--godot-font-color-hover);
 	/* --tag-decoration: none; */
 	/* --tag-decoration-hover: none; */
 	--tag-background: hsla(var(--interactive-accent-hsl), 0.3);
@@ -1485,15 +1485,14 @@ body {
 	--godot-color-pink: #ff8ccc;
 
 	/* Error/Success/Warning Colours */
-	--godot-error-colour-rgb: var(--godot-color-red-rgb);
-	--godot-error-colour: var(--godot-color-red);
-	--godot-success-colour-rgb: var(--godot-color-green-rgb);
-	--godot-success-colour: var(--godot-color-green);
-	--godot-warning-colour-rgb: var(--godot-color-yellow-rgb);
-	--godot-warning-colour: var(--godot-color-yellow);
+	--godot-error-color-rgb: var(--godot-color-red-rgb);
+	--godot-error-color: var(--godot-color-red);
+	--godot-success-color-rgb: var(--godot-color-green-rgb);
+	--godot-success-color: var(--godot-color-green);
+	--godot-warning-color-rgb: var(--godot-color-yellow-rgb);
+	--godot-warning-color: var(--godot-color-yellow);
 	/* ──────────────────────────────────────────────────────────────────────── */
 
-	/* Extended Colours Overrides */
 	--color-red-rgb: var(--godot-color-red-rgb);
 	--color-red: var(--godot-color-red);
 	--color-orange-rgb: var(--godot-color-orange-rgb);
@@ -1511,12 +1510,12 @@ body {
 	--color-pink-rgb: var(--godot-color-pink-rgb);
 	--color-pink: var(--godot-color-pink);
 
-	--text-normal: var(--godot-font-colour);
-	--text-muted: var(--godot-font-colour);
-	--text-faint: rgba(var(--godot-font-colour-disabled-rgb), var(--godot-font-colour-disabled-alpha));
-	--text-error: var(--godot-error-colour);
-	--text-warning: var(--godot-warning-colour);
-	--text-success: var(--godot-success-colour);
+	--text-normal: var(--godot-font-color);
+	--text-muted: var(--godot-font-color);
+	--text-faint: rgba(var(--godot-font-color-disabled-rgb), var(--godot-font-color-disabled-alpha));
+	--text-error: var(--godot-error-color);
+	--text-warning: var(--godot-warning-color);
+	--text-success: var(--godot-success-color);
 
 	--border-width: var(--godot-width-border-focus);
 
