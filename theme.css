@@ -1493,6 +1493,9 @@ body {
 	--godot-warning-color: var(--godot-color-yellow);
 	/* ──────────────────────────────────────────────────────────────────────── */
 
+
+	/* ──── Overrides ───────────────────────────────────────────────────────── */
+	/* Extended Colours */
 	--color-red-rgb: var(--godot-color-red-rgb);
 	--color-red: var(--godot-color-red);
 	--color-orange-rgb: var(--godot-color-orange-rgb);
@@ -1521,6 +1524,7 @@ body {
 
 	/* Canvas */
 	--canvas-dot-pattern: var(--background-secondary-alt);
+	/* ──────────────────────────────────────────────────────────────────────── */
 }
 
 /* Icon change for "Open Snippets Folder" button in settings */
