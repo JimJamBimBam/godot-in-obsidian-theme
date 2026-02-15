@@ -1,14 +1,4 @@
 :root {
-	/* Icons */
-	/* ──── Icons ──────────────────────────────────────────────────────────── */
-	--godot-folder-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill='%23e0e0e0' d='M2 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-4a1 1 0 0 1-1-1V3a1 1 0 0 0-1-1z'/%3E%3C/svg%3E%0A");
-	--godot-folder-browse-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='16' height='16'%3E%3Cpath fill='%23e0e0e0' d='M2 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3.738a2.5 2.5 0 0 1-.238-1.074 2.49 2.49 0 0 1 2.5-2.5c.565 0 1.083.187 1.5.5.417-.313.935-.5 1.5-.5s1.083.187 1.5.5a2.5 2.5 0 0 1 2.5-.295V6a1 1 0 0 0-1-1h-4a1 1 0 0 1-1-1V3a1 1 0 0 0-1-1Zm5.408 13.355.074.018q-.038-.008-.074-.018m.35.06'/%3E%3Cpath fill='%23e0e0e0' d='M9 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0'/%3E%3C/svg%3E%0A");
-	--godot-file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill='%23e0e0e0' d='m2 1v14h12v-9h-5v-5zm8 0v4h4z'/%3E%3C/svg%3E%0A");
-	--godot-code-fold-down-arrow-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m3 5 3 3 3-3'/%3E%3C/svg%3E%0A");
-	--godot-gui-slider-grabber-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle cx='8' cy='8' r='3' fill='%23fff' fill-opacity='.9'/%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23e0e0e0' stroke-opacity='.29' stroke-width='2'/%3E%3C/svg%3E");
-	--godot-gui-slider-grabber-hl-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle cx='8' cy='8' r='3' fill='%23fff' fill-opacity='.9'/%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23e0e0e0' stroke-width='2'/%3E%3C/svg%3E");
-	/* ──────────────────────────────────────────────────────────────────────── */
-
 	/* ──── Fonts ───────────────────────────────────────────────────────────── */
 	/* Could not get fonts to embed into theme file. Fonts must exist on the system to work. */
 	--godot-font-main: "??";
@@ -551,27 +541,8 @@ body {
 	--drag-ghost-background: rgba(0 0 0 / 0.0);
 	--drag-ghost-text-color: rgba(var(--mono-rgb-100), 0.7);
 
-	/* NOTE: Replaces Obsidian icon in drag ghost with Godot equivalent */
 	.drag-ghost {
 		box-shadow: none;
-
-		/* Setting "display" to none to hide the Obsidian icon */
-		svg {
-			display: none;
-		}
-
-		/* Using pseudo classes to replace icons */
-		.drag-ghost-self::before {
-		content: "";
-		stroke-width: var(--icon-xs-stroke-width);
-		width: var(--icon-xs);
-		height: var(--icon-xs);
-		mask: var(--godot-file-icon) no-repeat center;
-		mask-size: contain;
-		background-color: var(--drag-ghost-text-color);
-		align-self: center;
-		margin-right: var(--size-2-2);
-		}
 	}
 
 	/* Dropdowns */
@@ -582,14 +553,6 @@ body {
 	/* --dropdown-background-size: 1em auto, 100%; */
 	/* --dropdown-padding: 0 1.9em 0 0.8em; */
 	
-	/* A bit funky with how the image is replaced. */
-	/* I think the original image has some transparency, which means it blends better. */
-	/* Could try using "::before" or "::after" to add my own icon. */
-	.dropdown { /* Override up-down arrows icon for dropdowns */
-		background-image: var(--godot-code-fold-down-arrow-icon);
-		/* background-color: rgba(0, 0, 0, 0.09); */
-		/* background-blend-mode: darken; */
-	}
 
 	/* Used within notes. Not too useful. Would like to add custom indentation guide for note selection panel. that looks like Godot's */
 	/* Indentation Guides */
@@ -738,31 +701,6 @@ body {
 	/* --slider-s-thumb-position: -5px; */
 	--slider-track-background: var(--godot-slider-color);
 	--slider-track-height: 4px;
-
-	.slider::-webkit-slider-thumb {
-		mask-image: var(--godot-gui-slider-grabber-icon);
-		-webkit-mask-image: var(--godot-gui-slider-grabber-icon);
-		mask-repeat: no-repeat;
-		mask-position: center;
-		mask-size: cover;
-	}
-	
-	.slider::-webkit-slider-thumb:hover {
-		mask-image: var(--godot-gui-slider-grabber-icon);
-		-webkit-mask-image: var(--godot-gui-slider-grabber-hl-icon);
-		mask-repeat: no-repeat;
-		mask-position: center;
-		mask-size: cover;
-	}
-
-	/* Currently doesn't work. Needs customs JS to move the percentage of the bar.
-	Need to update local variable "--slider-value" to make the bar move. */
-	.slider::-webkit-slider-runnable-track {
-		--slider-value: 35%;
-		border-radius: var(--slider-track-height);
-		background: linear-gradient(to right, var(--godot-slider-grabber-area-color) var(--slider-value), var(--slider-track-background) 0);
-		height: var(--slider-track-height);
-	}
 
 	/* Tabs */
 	--tab-background-active: var(--godot-tab-focus-bg-color);
@@ -1069,10 +1007,6 @@ body {
 	/* --link-unresolved-filter: none; */
 	/* --link-unresolved-decoration-style: solid; */
 	/* --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3); */
-
-	/* .external-link { */
-		/* background-image: var(--godot-folder-browse-icon); */
-	/* } */
 
 	/* List */
 	/* --list-indent: calc(var(--indent-unit) * var(--indent-size)); */
@@ -1526,25 +1460,3 @@ body {
 	--canvas-dot-pattern: var(--background-secondary-alt);
 	/* ──────────────────────────────────────────────────────────────────────── */
 }
-
-/* Icon change for "Open Snippets Folder" button in settings */
-/* ──── Open Sippets Folder ─────────────────────────────────────────────── */
-.clickable-icon[aria-label="Open snippets folder"] {
-	svg {
-		display: none;
-	}
-}
-
-.clickable-icon[aria-label="Open snippets folder"]::before {
-	/* To Webkit or not is the question?
-	or do I just use both? */
-	content: "";
-	stroke-width: var(--icon-stroke); /* Might not matter for certain Godot icons. */
-	display: inline-block;
-	width: var(--icon-size);
-	height: var(--icon-size);
-	mask: var(--godot-folder-icon) no-repeat center;
-	mask-size: contain;
-	background-color: var(--color-accent);
-}
-/* ──────────────────────────────────────────────────────────────────────── */
