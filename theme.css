@@ -524,13 +524,6 @@ body {
 	--checklist-done-color: hsl(var(--accent-h) var(--accent-s) var(--accent-l) / 1.0);
 	/* --checkbox-margin-inline-start: 0.85em; */
 
-	/* Color Input */
-	/* NOTE: Slightly larger colour input button */
-	--swatch-radius: 13px;
-	--swatch-height: 26px;
-	--swatch-width: 26px;
-	--swatch-shadow: inset 0 0 0 1px rgba(0 0 0 / 0.3);
-
 	/* Dialog */
 	/* --dialog-width: 560px; */
 	/* --dialog-max-width: 80vw */
